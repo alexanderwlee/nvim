@@ -1,8 +1,4 @@
 " basic configuration
-set tabstop=4	" indent using 4 spaces
-set shiftwidth=4    " when shifting, indent using four spaces
-set expandtab	" convert tab to spaces
-set smartindent	" smart indentation
 set wrap  " enable line wrapping
 set linebreak   " avoid wrapping a line in the middle of a word
 set number  " line numbers
@@ -37,6 +33,7 @@ Plug 'cocopon/iceberg.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'dense-analysis/ale'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plug 'tpope/vim-sleuth'
 call plug#end()
 
 
