@@ -3,6 +3,7 @@ set tabstop=4	" indent using 4 spaces
 set shiftwidth=4    " when shifting, indent using four spaces
 set expandtab	" convert tab to spaces
 set smartindent	" smart indentation
+set linebreak   " avoid wrapping a line in the middle of a word
 set number  " line numbers
 set relativenumber  " set relative line numbers
 set ignorecase  " ignore case when searching
@@ -109,7 +110,7 @@ nmap <leader>rn <Plug>(coc-rename)
 
 " Formatting selected code.
 xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected) 
+nmap <leader>f  <Plug>(coc-format-selected)
 
 " Use `[g` and `]g` to navigate diagnostics
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
