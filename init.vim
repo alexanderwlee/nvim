@@ -119,3 +119,6 @@ nmap <silent> ]g <Plug>(coc-diagnostic-next)
 let g:ale_enabled = 0   " do not auto lint; want to use linting from coc instead of ale
 let g:ale_fixers = {'*': ['remove_trailing_lines', 'trim_whitespace']}  " fixers for all files
 let g:ale_fix_on_save = 1   " fix on save
+
+" indentLine
+let g:indentLine_char = '│'   " use prettier lines
