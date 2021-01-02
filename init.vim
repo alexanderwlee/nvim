@@ -10,7 +10,6 @@ set showmatch	" show matching brackets
 colorscheme iceberg " use iceberg colorscheme
 set termguicolors   " allows colorscheme to work
 set mouse=a " enable mouse for scrolling and resizing
-set title   " show the window's title, reflecting the file currently being edited
 
 
 " Plugins with vim-plug
