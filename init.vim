@@ -70,9 +70,10 @@ set updatetime=100  " reduce delay to 100ms
 let g:rainbow_active = 1    " enable vim rainbow globally
 
 " CoC
+" install the missing extensions after coc.nvim service started
+let g:coc_global_extensions = ['coc-pyright', 'coc-tsserver', 'coc-java', 'coc-html', 'coc-css', 'coc-json']
+
 " Use tab for trigger completion with characters ahead and navigate.
-" NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
-" other plugin before putting this into your config.
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<TAB>" :
