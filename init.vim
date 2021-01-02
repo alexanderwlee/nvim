@@ -10,6 +10,7 @@ set showmatch	" show matching brackets
 colorscheme iceberg " use iceberg colorscheme
 set termguicolors   " allows colorscheme to work
 set mouse=a " enable mouse for scrolling and resizing
+set hidden  " enable new buffer creation without saving previous buffer
 
 
 " Plugins with vim-plug
