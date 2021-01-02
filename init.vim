@@ -1,15 +1,15 @@
 " basic configuration
 set wrap  " enable line wrapping
-set linebreak   " avoid wrapping a line in the middle of a word
+set linebreak  " avoid wrapping a line in the middle of a word
 set number  " line numbers
 set relativenumber  " set relative line numbers
 set ignorecase  " ignore case when searching
-set smartcase	" automatically switch search to case-sensitive when search query constains an uppercase letter
-set cursorline	" highlight the line currently under cursor
-set showmatch	" show matching brackets
-colorscheme iceberg " use iceberg colorscheme
-set termguicolors   " allows colorscheme to work
-set mouse=a " enable mouse for scrolling and resizing
+set smartcase  " automatically switch search to case-sensitive when search query constains an uppercase letter
+set cursorline  " highlight the line currently under cursor
+set showmatch  " show matching brackets
+colorscheme iceberg  " use iceberg colorscheme
+set termguicolors  " allows colorscheme to work
+set mouse=a  " enable mouse for scrolling and resizing
 set hidden  " enable new buffer creation without saving previous buffer
 
 
@@ -48,7 +48,7 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in
 autocmd BufWinEnter * silent NERDTreeMirror
 
 " lightline
-set noshowmode  " get rid of the default status line"
+set noshowmode  " get rid of the default status line
 " use iceberg colorscheme and include git branch
 let g:lightline = {
       \ 'colorscheme': 'iceberg',
@@ -65,7 +65,7 @@ let g:lightline = {
 set updatetime=100  " reduce delay to 100ms
 
 " Vim rainbow
-let g:rainbow_active = 1    " enable vim rainbow globally
+let g:rainbow_active = 1  " enable vim rainbow globally
 
 " CoC
 " install the missing extensions after coc.nvim service started
@@ -108,9 +108,9 @@ nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " ALE
-let g:ale_enabled = 0   " do not auto lint; want to use linting from coc instead of ale
+let g:ale_enabled = 0  " do not auto lint; want to use linting from coc instead of ale
 let g:ale_fixers = {'*': ['remove_trailing_lines', 'trim_whitespace']}  " fixers for all files
-let g:ale_fix_on_save = 1   " fix on save
+let g:ale_fix_on_save = 1  " fix on save
 
 " indentLine
-let g:indentLine_char = '│'   " use prettier lines
+let g:indentLine_char = '│'  " use prettier lines
