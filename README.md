@@ -1,1 +1,1 @@
-This is Alex's nvim configuration.
+Alex's nvim configuration.
