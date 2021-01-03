@@ -11,6 +11,7 @@ colorscheme iceberg  " use iceberg colorscheme
 set termguicolors  " allows colorscheme to work
 set mouse=a  " enable mouse for scrolling and resizing
 set hidden  " enable new buffer creation without saving previous buffer
+set clipboard+=unnamedplus  " always use the clipboard for all operations
 
 
 " plugins with vim-plug
