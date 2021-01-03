@@ -64,9 +64,6 @@ let g:lightline = {
 " vim-gitgutter
 set updatetime=100  " reduce delay to 100ms
 
-" Vim rainbow
-let g:rainbow_active = 1  " enable vim rainbow globally
-
 " CoC
 " install the missing extensions after coc.nvim service started
 let g:coc_global_extensions = ['coc-pyright', 'coc-tsserver', 'coc-java', 'coc-html', 'coc-css', 'coc-json']
