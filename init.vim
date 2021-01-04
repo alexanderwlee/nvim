@@ -109,5 +109,9 @@ let g:ale_enabled = 0  " do not auto lint; want to use linting from coc instead 
 let g:ale_fixers = {'*': ['remove_trailing_lines', 'trim_whitespace']}  " fixers for all files
 let g:ale_fix_on_save = 1  " fix on save
 
+" vim-markdown
+let g:vim_markdown_conceal = 0  " disable concealing syntax for markdown
+let g:vim_markdown_conceal_code_blocks = 0  " disable conceal for code blocks in markdown
+
 " indentLine
 let g:indentLine_char = '│'  " use prettier lines
