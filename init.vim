@@ -7,8 +7,6 @@ set ignorecase  " ignore case when searching
 set smartcase  " automatically switch search to case-sensitive when search query constains an uppercase letter
 set cursorline  " highlight the line currently under cursor
 set showmatch  " show matching brackets
-colorscheme iceberg  " use iceberg colorscheme
-set termguicolors  " allows colorscheme to work
 set mouse=a  " enable mouse for scrolling and resizing
 set hidden  " enable new buffer creation without saving previous buffer
 set clipboard+=unnamedplus  " always use the clipboard for all operations
@@ -25,23 +23,31 @@ Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
-Plug 'altercation/vim-colors-solarized'
 Plug 'frazrepo/vim-rainbow'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'mileszs/ack.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'cocopon/iceberg.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'dense-analysis/ale'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'tpope/vim-sleuth'
 Plug 'Yggdroot/indentLine'
 Plug 'majutsushi/tagbar'
+" colorschemes
+Plug 'altercation/vim-colors-solarized'
+Plug 'cocopon/iceberg.vim'
+Plug 'ghifarit53/tokyonight-vim'
+Plug 'tomasiser/vim-code-dark'
+Plug 'bluz71/vim-nightfly-guicolors'
 call plug#end()
 
 
 " plugin configurations
+" nightfly
+set termguicolors  " allows colorscheme to work
+colorscheme nightfly  " use nightfly colorscheme
+
 " NERDTree
 " Start NERDTree when Vim starts with a directory argument.
 autocmd StdinReadPre * let s:std_in=1
@@ -113,3 +119,4 @@ let g:vim_markdown_conceal_code_blocks = 0  " disable conceal for code blocks in
 
 " indentLine
 let g:indentLine_char = '│'  " use prettier lines
+let g:indentLine_setColors = 0  " for nightfly colorscheme
