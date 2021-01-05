@@ -12,6 +12,7 @@ set termguicolors  " allows colorscheme to work
 set mouse=a  " enable mouse for scrolling and resizing
 set hidden  " enable new buffer creation without saving previous buffer
 set clipboard+=unnamedplus  " always use the clipboard for all operations
+au TermOpen * setlocal nonumber norelativenumber  " remove line numbers and relative line numbers in terminal
 
 
 " plugins with vim-plug
@@ -45,6 +46,8 @@ call plug#end()
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') |
     \ execute 'NERDTree' argv()[0] | wincmd p | enew | execute 'cd '.argv()[0] | endif
+nnoremap <C-n> :NERDTree<CR>  " NERDTree remap
+nnoremap <C-t> :NERDTreeToggle<CR>  " NERDTreeToggle remap
 let NERDTreeMinimalUI = 1  " Disables display of the 'Bookmarks' label and 'Press ? for help' text.
 let NERDTreeShowHidden = 1  " Tells the NERDTree whether to display hidden files on startup.
 
