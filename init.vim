@@ -50,10 +50,14 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in
 let NERDTreeMinimalUI = 1  " Disables display of the 'Bookmarks' label and 'Press ? for help' text.
 let NERDTreeShowHidden = 1  " Tells the NERDTree whether to display hidden files on startup.
 
-
 " airline
+" use some powerline symbols
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
+let g:airline_symbols.branch = ''
 
 " vim-gitgutter
 set updatetime=100  " reduce delay to 100ms
