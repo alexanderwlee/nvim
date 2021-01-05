@@ -37,6 +37,7 @@ Plug 'dense-analysis/ale'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'tpope/vim-sleuth'
 Plug 'Yggdroot/indentLine'
+Plug 'majutsushi/tagbar'
 call plug#end()
 
 
@@ -47,7 +48,6 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') |
     \ execute 'NERDTree' argv()[0] | wincmd p | enew | execute 'cd '.argv()[0] | endif
 nnoremap <C-n> :NERDTree<CR>  " NERDTree remap
-nnoremap <C-t> :NERDTreeToggle<CR>  " NERDTreeToggle remap
 let NERDTreeMinimalUI = 1  " Disables display of the 'Bookmarks' label and 'Press ? for help' text.
 let NERDTreeShowHidden = 1  " Tells the NERDTree whether to display hidden files on startup.
 
@@ -110,3 +110,6 @@ let g:vim_markdown_conceal_code_blocks = 0  " disable conceal for code blocks in
 
 " indentLine
 let g:indentLine_char = '│'  " use prettier lines
+
+" tagbar
+nmap <F8> :TagbarToggle<CR>  " map TagbarToggle
