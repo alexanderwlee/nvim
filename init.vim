@@ -71,7 +71,7 @@ set updatetime=100  " reduce delay to 100ms
 
 " CoC
 " install the missing extensions after coc.nvim service started
-let g:coc_global_extensions = ['coc-pyright', 'coc-tsserver', 'coc-java', 'coc-html', 'coc-css', 'coc-json']
+let g:coc_global_extensions = ['coc-pyright', 'coc-tsserver', 'coc-omnisharp', 'coc-java', 'coc-html', 'coc-css', 'coc-json']
 " Use tab for trigger completion with characters ahead and navigate.
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
@@ -123,4 +123,4 @@ let g:indentLine_char = '│'  " use prettier lines
 
 " vimspector
 let g:vimspector_enable_mappings = 'HUMAN'  " use HUMAN mapping
-let g:vimspector_install_gadgets = [ 'debugpy', 'vscode-node-debug2' ]  " list of gadgets to install
+let g:vimspector_install_gadgets = [ 'debugpy', 'vscode-node-debug2', 'netcoredbg' ]  " list of gadgets to install
