@@ -34,6 +34,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'tpope/vim-sleuth'
 Plug 'Yggdroot/indentLine'
 Plug 'majutsushi/tagbar'
+Plug 'puremourning/vimspector'
 " colorschemes
 Plug 'altercation/vim-colors-solarized'
 Plug 'cocopon/iceberg.vim'
@@ -119,3 +120,7 @@ let g:vim_markdown_conceal_code_blocks = 0  " disable conceal for code blocks in
 
 " indentLine
 let g:indentLine_char = '│'  " use prettier lines
+
+" vimspector
+let g:vimspector_enable_mappings = 'HUMAN'  " use HUMAN mapping
+let g:vimspector_install_gadgets = [ 'debugpy', 'vscode-node-debug2' ]  " list of gadgets to install
