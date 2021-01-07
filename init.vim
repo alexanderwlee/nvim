@@ -45,9 +45,10 @@ call plug#end()
 
 
 " plugin configurations
-" nightfly
+" colorscheme: nightfly
 set termguicolors  " allows colorscheme to work
 colorscheme nightfly  " use nightfly colorscheme
+hi Normal guibg=NONE ctermbg=NONE  " make background follow iTerm's transparency configurations
 
 " NERDTree
 " Start NERDTree when Vim starts with a directory argument.
