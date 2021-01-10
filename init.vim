@@ -36,18 +36,15 @@ Plug 'Yggdroot/indentLine'
 Plug 'majutsushi/tagbar'
 Plug 'puremourning/vimspector'
 " colorschemes
-Plug 'altercation/vim-colors-solarized'
-Plug 'cocopon/iceberg.vim'
-Plug 'ghifarit53/tokyonight-vim'
-Plug 'tomasiser/vim-code-dark'
 Plug 'bluz71/vim-nightfly-guicolors'
+Plug 'Rigellute/rigel'
 call plug#end()
 
 
 " plugin configurations
 " colorscheme: nightfly
 set termguicolors  " allows colorscheme to work
-colorscheme nightfly  " use nightfly colorscheme
+colorscheme rigel  " use rigel colorscheme
 hi Normal guibg=NONE ctermbg=NONE  " make background follow iTerm's transparency configurations
 
 " NERDTree
