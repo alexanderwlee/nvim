@@ -117,6 +117,7 @@ let g:vim_markdown_conceal = 0  " disable concealing syntax for markdown
 let g:vim_markdown_conceal_code_blocks = 0  " disable conceal for code blocks in markdown
 
 " indentLine
+let g:indentLine_enabled = 0  " disable indentLine by default
 let g:indentLine_char = '│'  " use prettier lines
 
 " vimspector
