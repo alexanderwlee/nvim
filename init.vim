@@ -17,7 +17,6 @@ au TermOpen * setlocal nonumber norelativenumber  " remove line numbers and rela
 call plug#begin('~/.config/nvim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'vim-airline/vim-airline'
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-surround'
@@ -35,25 +34,18 @@ Plug 'tpope/vim-sleuth'
 Plug 'Yggdroot/indentLine'
 Plug 'majutsushi/tagbar'
 Plug 'puremourning/vimspector'
+" status lines
+Plug 'vim-airline/vim-airline'
 " colorschemes
-Plug 'Rigellute/rigel'
-Plug 'arcticicestudio/nord-vim'
+Plug 'bluz71/vim-nightfly-guicolors'
 call plug#end()
 
 
 " plugin configurations
-" colorscheme: nord
+" colorscheme: nightfly
 set termguicolors  " allows colorscheme to work
-colorscheme nord  " use rigel colorscheme
+colorscheme nightfly  " use nightfly colorscheme
 hi Normal guibg=NONE ctermbg=NONE  " make background follow iTerm's transparency configurations
-
-" NERDTree
-" Start NERDTree when Vim starts with a directory argument.
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') |
-    \ execute 'NERDTree' argv()[0] | wincmd p | enew | execute 'cd '.argv()[0] | endif
-let NERDTreeMinimalUI = 1  " Disables display of the 'Bookmarks' label and 'Press ? for help' text.
-let NERDTreeShowHidden = 1  " Tells the NERDTree whether to display hidden files on startup.
 
 " airline
 " use some powerline symbols
@@ -63,6 +55,14 @@ endif
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 let g:airline_symbols.branch = ''
+
+" NERDTree
+" Start NERDTree when Vim starts with a directory argument.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') |
+    \ execute 'NERDTree' argv()[0] | wincmd p | enew | execute 'cd '.argv()[0] | endif
+let NERDTreeMinimalUI = 1  " Disables display of the 'Bookmarks' label and 'Press ? for help' text.
+let NERDTreeShowHidden = 1  " Tells the NERDTree whether to display hidden files on startup.
 
 " vim-gitgutter
 set updatetime=100  " reduce delay to 100ms
