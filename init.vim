@@ -36,15 +36,15 @@ Plug 'Yggdroot/indentLine'
 Plug 'majutsushi/tagbar'
 Plug 'puremourning/vimspector'
 " colorschemes
-Plug 'bluz71/vim-nightfly-guicolors'
 Plug 'Rigellute/rigel'
+Plug 'arcticicestudio/nord-vim'
 call plug#end()
 
 
 " plugin configurations
-" colorscheme: nightfly
+" colorscheme: nord
 set termguicolors  " allows colorscheme to work
-colorscheme rigel  " use rigel colorscheme
+colorscheme nord  " use rigel colorscheme
 hi Normal guibg=NONE ctermbg=NONE  " make background follow iTerm's transparency configurations
 
 " NERDTree
