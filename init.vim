@@ -22,7 +22,6 @@ Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
-Plug 'frazrepo/vim-rainbow'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'mileszs/ack.vim'
@@ -34,9 +33,7 @@ Plug 'tpope/vim-sleuth'
 Plug 'Yggdroot/indentLine'
 Plug 'majutsushi/tagbar'
 Plug 'puremourning/vimspector'
-" status lines
 Plug 'vim-airline/vim-airline'
-" colorschemes
 Plug 'bluz71/vim-nightfly-guicolors'
 call plug#end()
 
@@ -117,7 +114,6 @@ let g:vim_markdown_conceal = 0  " disable concealing syntax for markdown
 let g:vim_markdown_conceal_code_blocks = 0  " disable conceal for code blocks in markdown
 
 " indentLine
-let g:indentLine_enabled = 0  " disable indentLine by default
 let g:indentLine_char = '│'  " use prettier lines
 
 " vimspector
