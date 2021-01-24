@@ -32,7 +32,6 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'tpope/vim-sleuth'
 Plug 'Yggdroot/indentLine'
 Plug 'majutsushi/tagbar'
-Plug 'puremourning/vimspector'
 Plug 'vim-airline/vim-airline'
 Plug 'bluz71/vim-nightfly-guicolors'
 call plug#end()
@@ -66,7 +65,7 @@ set updatetime=100  " reduce delay to 100ms
 
 " CoC
 " install the missing extensions after coc.nvim service started
-let g:coc_global_extensions = ['coc-pyright', 'coc-tsserver', 'coc-omnisharp', 'coc-java', 'coc-go', 'coc-html', 'coc-css', 'coc-json']
+let g:coc_global_extensions = ['coc-pyright', 'coc-tsserver', 'coc-omnisharp', 'coc-java', 'coc-json']
 " Use tab for trigger completion with characters ahead and navigate.
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
@@ -115,7 +114,3 @@ let g:vim_markdown_conceal_code_blocks = 0  " disable conceal for code blocks in
 
 " indentLine
 let g:indentLine_char = '│'  " use prettier lines
-
-" vimspector
-let g:vimspector_enable_mappings = 'HUMAN'  " use HUMAN mapping
-let g:vimspector_install_gadgets = [ 'debugpy', 'vscode-node-debug2', 'netcoredbg' ]  " list of gadgets to install
