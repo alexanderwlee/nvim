@@ -15,25 +15,25 @@ au TermOpen * setlocal nonumber norelativenumber  " remove line numbers and rela
 
 " plugins with vim-plug
 call plug#begin('~/.config/nvim/plugged')
-Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'jiangmiao/auto-pairs'
-Plug 'preservim/nerdcommenter'
-Plug 'tpope/vim-surround'
-Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'mileszs/ack.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'sheerun/vim-polyglot'
-Plug 'dense-analysis/ale'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
-Plug 'tpope/vim-sleuth'
-Plug 'Yggdroot/indentLine'
-Plug 'majutsushi/tagbar'
-Plug 'vim-airline/vim-airline'
-Plug 'bluz71/vim-nightfly-guicolors'
+Plug 'scrooloose/nerdtree'  " show file tree explorer
+Plug 'Xuyuanp/nerdtree-git-plugin'  " show git status flags with NERDTree
+Plug 'jiangmiao/auto-pairs'  "  insert or delete brackets, parens, quotes in pair
+Plug 'preservim/nerdcommenter'  " comment text
+Plug 'tpope/vim-surround'  " delete, change, and add surroundings in pairs
+Plug 'airblade/vim-gitgutter'  " show git diff markers in the sign column
+Plug 'tpope/vim-fugitive'  " git plugin
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }  " fuzzy finder (fzf)
+Plug 'junegunn/fzf.vim'  "fzf plugin
+Plug 'mileszs/ack.vim'  " ack search tool plugin
+Plug 'neoclide/coc.nvim', {'branch': 'release'}  " language server plugin
+Plug 'sheerun/vim-polyglot'  " collection of language packs for Vim
+Plug 'dense-analysis/ale'  " asynchronous linting
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }  " markdown preview plugin
+Plug 'tpope/vim-sleuth'  " heuristically set buffer options
+Plug 'Yggdroot/indentLine'  " display the indention levels with thin vertical lines
+Plug 'majutsushi/tagbar'  " displays tags in a window
+Plug 'vim-airline/vim-airline'  " status line
+Plug 'bluz71/vim-nightfly-guicolors'  " nightfly colorscheme
 call plug#end()
 
 
