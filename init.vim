@@ -65,7 +65,7 @@ set updatetime=100  " reduce delay to 100ms
 
 " CoC
 " install the missing extensions after coc.nvim service started
-let g:coc_global_extensions = ['coc-pyright', 'coc-markdownlint', 'coc-json']
+let g:coc_global_extensions = ['coc-pyright', 'coc-java', 'coc-markdownlint', 'coc-json']
 " Use tab for trigger completion with characters ahead and navigate.
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
