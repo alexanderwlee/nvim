@@ -1,4 +1,8 @@
 " basic configuration
+set expandtab  " convert tabs to spaces
+set shiftround  " when shifting lines, round indentation to the nearest multiple of shiftwidth
+set shiftwidth=4  " when shifting, indent using 4 spaces
+set tabstop=4  " indent using four spaces
 set wrap  " enable line wrapping
 set linebreak  " avoid wrapping a line in the middle of a word
 set number  " line numbers
@@ -29,7 +33,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}  " language server plugin
 Plug 'sheerun/vim-polyglot'  " collection of language packs for Vim
 Plug 'dense-analysis/ale'  " asynchronous linting
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }  " markdown preview plugin
-Plug 'tpope/vim-sleuth'  " heuristically set buffer options
 Plug 'Yggdroot/indentLine'  " display the indention levels with thin vertical lines
 Plug 'majutsushi/tagbar'  " displays tags in a window
 Plug 'vim-airline/vim-airline'  " status line
