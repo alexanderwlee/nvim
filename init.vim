@@ -37,10 +37,14 @@ Plug 'majutsushi/tagbar'  " displays tags in a window
 Plug 'mbbill/undotree'  " undo history visualizer
 Plug 'vim-airline/vim-airline'  " status line
 Plug 'bluz71/vim-nightfly-guicolors'  " nightfly colorscheme
+Plug 'ryanoasis/vim-devicons'  " filetype icons for Vim plugins
 call plug#end()
 
 
 " plugin configurations
+" vim-devicons
+set guifont=MesloLGS\ NF:h18  " set Vim font to a Nerd Font
+
 " colorscheme: nightfly
 set termguicolors  " allows colorscheme to work
 colorscheme nightfly  " use nightfly colorscheme
@@ -52,8 +56,14 @@ if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
 let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = '☰ '
+let g:airline_symbols.maxlinenr = ' '
+let g:airline_symbols.dirty=' ⚡'
 
 " NERDTree
 " Start NERDTree when Vim starts with a directory argument.
