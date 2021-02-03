@@ -1,4 +1,7 @@
 call plug#begin('~/.config/nvim/plugged')
+if !has('nvim')
+  Plug 'noahfrederick/vim-neovim-defaults'
+endif
 Plug 'scrooloose/nerdtree'  " show file tree explorer
 Plug 'Xuyuanp/nerdtree-git-plugin'  " show git status flags with NERDTree
 Plug 'jiangmiao/auto-pairs'  "  insert or delete brackets, parens, quotes in pair
