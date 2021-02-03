@@ -1,6 +1,6 @@
 call plug#begin('~/.config/nvim/plugged')
 if !has('nvim')
-  Plug 'noahfrederick/vim-neovim-defaults'
+  Plug 'noahfrederick/vim-neovim-defaults'  " nvim defaults for vim
 endif
 Plug 'scrooloose/nerdtree'  " show file tree explorer
 Plug 'Xuyuanp/nerdtree-git-plugin'  " show git status flags with NERDTree
