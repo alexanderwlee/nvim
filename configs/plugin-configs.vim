@@ -34,7 +34,7 @@ set updatetime=100  " reduce delay to 100ms
 
 " CoC
 " install the missing extensions after coc.nvim service started
-let g:coc_global_extensions = ['coc-pyright', 'coc-java', 'coc-json']
+let g:coc_global_extensions = ['coc-pyright', 'coc-java', 'coc-json', 'coc-vimtex']
 " Use tab for trigger completion with characters ahead and navigate.
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
@@ -80,6 +80,9 @@ let g:ale_fix_on_save = 1  " fix on save
 " vim-markdown
 let g:vim_markdown_conceal = 0  " disable concealing syntax for markdown
 let g:vim_markdown_conceal_code_blocks = 0  " disable conceal for code blocks in markdown
+
+" vimtex
+let g:vimtex_view_method = 'skim'  " use skim as pdf viewer
 
 " indentLine
 let g:indentLine_enabled = 0  " disable indentLine by default
