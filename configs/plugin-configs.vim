@@ -5,6 +5,7 @@ set guifont=MesloLGS\ NF:h18  " set Vim font to a Nerd Font
 colorscheme nightfly  " use nightfly colorscheme
 
 " airline
+set noshowmode " remove default status bar
 " use some powerline symbols
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
