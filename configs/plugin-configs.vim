@@ -2,9 +2,7 @@
 set guifont=MesloLGS\ NF:h18  " set Vim font to a Nerd Font
 
 " colorscheme: nightfly
-set termguicolors  " allows colorscheme to work
 colorscheme nightfly  " use nightfly colorscheme
-hi Normal guibg=NONE ctermbg=NONE  " make background follow iTerm's transparency configurations
 
 " airline
 " use some powerline symbols
