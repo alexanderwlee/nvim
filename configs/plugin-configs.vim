@@ -86,10 +86,3 @@ let g:vimtex_view_method = 'skim'  " use skim as pdf viewer
 " indentLine
 let g:indentLine_enabled = 0  " disable indentLine by default
 let g:indentLine_char = '│'  " use prettier lines
-
-" calendar.vim
-source ~/.cache/calendar.vim/credentials.vim
-let g:calendar_google_calendar = 1
-let g:calendar_google_task = 1
-let g:calendar_date_month_name = 1
-let g:calendar_cyclic_view = 1
