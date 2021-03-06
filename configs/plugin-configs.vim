@@ -72,9 +72,12 @@ nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " ALE
-let g:ale_enabled = 0  " do not auto lint; want to use linting from coc instead of ale
-let g:ale_fixers = {'*': ['remove_trailing_lines', 'trim_whitespace']}  " fixers for all files
-let g:ale_fix_on_save = 1  " fix on save
+let g:ale_linters = {'python': ['flake8']}  " linters
+let g:ale_python_flake8_options='--max-line-length=99'
+let g:ale_fixers = {
+            \'*': ['remove_trailing_lines', 'trim_whitespace'],
+            \'python': ['black'],
+            \}  " fixers
 
 " vim-markdown
 let g:vim_markdown_conceal = 0  " disable concealing syntax for markdown
