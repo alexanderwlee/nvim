@@ -72,7 +72,10 @@ nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " ALE
-let g:ale_linters = {'python': ['flake8']}  " linters
+let g:ale_linters = {
+      \'python': ['flake8'],
+      \'tex': ['chktex'],
+      \}  " linters
 let g:ale_fixers = {
             \'*': ['remove_trailing_lines', 'trim_whitespace'],
             \'python': ['black'],
