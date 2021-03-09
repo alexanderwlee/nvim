@@ -73,10 +73,10 @@ nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " ALE
 let g:ale_linters = {'python': ['flake8']}  " linters
-let g:ale_python_flake8_options='--max-line-length=99'
+let g:ale_python_flake8_options='--max-line-length=127'
 let g:ale_fixers = {
             \'*': ['remove_trailing_lines', 'trim_whitespace'],
-            \'python': ['black'],
+            \'python': ['autopep8'],
             \}  " fixers
 
 " vim-markdown
