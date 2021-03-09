@@ -73,11 +73,13 @@ nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " ALE
 let g:ale_linters = {'python': ['flake8']}  " linters
-let g:ale_python_flake8_options='--max-line-length=127'
 let g:ale_fixers = {
             \'*': ['remove_trailing_lines', 'trim_whitespace'],
-            \'python': ['autopep8'],
+            \'python': ['black'],
             \}  " fixers
+let g:ale_python_flake8_options = '--max-line-length=99'
+let g:ale_python_black_options = '--line-length=99'
+let g:ale_fix_on_save = 1
 
 " vim-markdown
 let g:vim_markdown_conceal = 0  " disable concealing syntax for markdown
