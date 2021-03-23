@@ -21,7 +21,6 @@ Plug 'majutsushi/tagbar'  " displays tags in a window
 Plug 'mbbill/undotree'  " undo history visualizer
 Plug 'ryanoasis/vim-devicons'  " filetype icons for Vim plugins
 Plug 'christoomey/vim-tmux-navigator'  " navigate between tmux panes and vim splits
-Plug 'kjwon15/vim-transparent'  " remove all background color on vim
 Plug 'vim-airline/vim-airline'  " status line
 Plug 'bluz71/vim-nightfly-guicolors'  " nightfly colorscheme
 call plug#end()
