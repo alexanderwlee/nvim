@@ -15,3 +15,4 @@ set hidden  " enable new buffer creation without saving previous buffer
 set clipboard+=unnamedplus  " always use the clipboard for all operations
 let mapleader = ' '  " use <space> for leader key
 set termguicolors  " use gui colors
+autocmd! GUIEnter * set vb t_vb=  " remove bells in MacVim
