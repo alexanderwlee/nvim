@@ -13,6 +13,7 @@ set showmatch  " show matching brackets
 set mouse=a  " enable mouse for scrolling and resizing
 set hidden  " enable new buffer creation without saving previous buffer
 set clipboard+=unnamedplus  " always use the clipboard for all operations
-let mapleader = ' '  " use <space> for leader key
 set termguicolors  " use gui colors
+
+let mapleader = ' '  " use <space> for leader key
 autocmd! GUIEnter * set vb t_vb=  " remove bells in MacVim
