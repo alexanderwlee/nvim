@@ -1,10 +1,10 @@
 " vim-devicons
 set guifont=MesloLGS\ NF:h16  " set Vim font to a Nerd Font
 
-" colorscheme: nightfly
-colorscheme nightfly  " use nightfly colorscheme
+" nightfly colorscheme
 let g:nightflyCursorColor = 1  " enable cursor color
 let g:nightflyUnderlineMatchParen = 1  " underline matching parentheses
+colorscheme nightfly  " use nightfly colorscheme
 
 " airline
 set noshowmode " remove default status bar
