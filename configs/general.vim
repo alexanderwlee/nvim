@@ -17,3 +17,12 @@ set termguicolors  " use gui colors
 
 let mapleader = ' '  " use <space> for leader key
 autocmd! GUIEnter * set vb t_vb=  " remove bells in MacVim
+
+set foldmethod=indent  " define folds by the indent of lines
+set foldlevel=100  " use high foldlevel to set all folds to be open by default
+" remember folds on save and restore them on enter
+augroup RememberFolds
+  autocmd!
+  autocmd BufWrite * mkview
+  autocmd BufWinEnter * silent! loadview
+augroup END
