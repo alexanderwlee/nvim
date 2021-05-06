@@ -4,6 +4,7 @@ set guifont=MesloLGS\ NF:h16  " set Vim font to a Nerd Font
 " nightfly colorscheme
 let g:nightflyCursorColor = 1  " enable cursor color
 let g:nightflyUnderlineMatchParen = 1  " underline matching parentheses
+let g:nightflyTransparent = 1  " use transparent background
 colorscheme nightfly  " use nightfly colorscheme
 
 " airline
