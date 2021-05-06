@@ -21,6 +21,7 @@ Plug 'majutsushi/tagbar'  " displays tags in a window
 Plug 'mbbill/undotree'  " undo history visualizer
 Plug 'ryanoasis/vim-devicons'  " filetype icons for Vim plugins
 Plug 'christoomey/vim-tmux-navigator'  " navigate between tmux panes and vim splits
+Plug 'vim-scripts/restore_view.vim'  " restore previous view (cursor and folds)
 Plug 'vim-airline/vim-airline'  " status line
 Plug 'bluz71/vim-nightfly-guicolors'  " nightfly colorscheme
 call plug#end()
