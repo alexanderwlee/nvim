@@ -33,12 +33,14 @@ let g:ale_linters = {
       \}  " linters
 let g:ale_fixers = {
             \'*': ['remove_trailing_lines', 'trim_whitespace'],
-            \'python': ['black'],
+            \'python': ['black', 'remove_trailing_lines', 'trim_whitespace'],
+            \'java': ['google_java_format'],
             \}  " fixers
 let g:ale_python_flake8_options = '--max-line-length=99'
 let g:ale_python_black_options = '--line-length=99'
+let g:ale_java_google_java_format_options = '--aosp'  " for indenting with 4 spaces
 let g:ale_fix_on_save = 1  " fix on save
-let g:ale_fix_on_save_ignore = ['black']  " ignore black fixer
+let g:ale_fix_on_save_ignore = ['black']  " ignore black fixer in case commented code gets aligned on save
 
 " vim-markdown
 let g:vim_markdown_conceal = 0  " disable concealing syntax for markdown
