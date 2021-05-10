@@ -38,7 +38,6 @@ let g:ale_fixers = {
             \}  " fixers
 let g:ale_python_flake8_options = '--max-line-length=99'
 let g:ale_python_black_options = '--line-length=99'
-let g:ale_java_google_java_format_options = '--aosp'  " for indenting with 4 spaces
 let g:ale_fix_on_save = 1  " fix on save
 let g:ale_fix_on_save_ignore = ['black']  " ignore black fixer in case commented code gets aligned on save
 
