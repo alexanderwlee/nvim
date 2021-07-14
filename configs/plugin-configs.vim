@@ -34,13 +34,13 @@ let g:ale_linters = {
 let g:ale_fixers = {
             \'*': ['remove_trailing_lines', 'trim_whitespace'],
             \'python': ['black', 'remove_trailing_lines', 'trim_whitespace'],
-            \'java': ['google_java_format'],
-            \'cpp': ['clang-format']
+            \'java': ['google_java_format', 'remove_trailing_lines', 'trim_whitespace'],
+            \'cpp': ['clang-format', 'remove_trailing_lines', 'trim_whitespace']
             \}  " fixers
 let g:ale_python_flake8_options = '--max-line-length=99'
 let g:ale_python_black_options = '--line-length=99'
 let g:ale_fix_on_save = 1  " fix on save
-let g:ale_fix_on_save_ignore = ['black', 'google_java_format']
+let g:ale_fix_on_save_ignore = ['black', 'google_java_format', 'clang-format']
 
 " vim-markdown
 let g:vim_markdown_conceal = 0  " disable concealing syntax for markdown
