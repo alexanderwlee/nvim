@@ -35,6 +35,7 @@ let g:ale_fixers = {
             \'*': ['remove_trailing_lines', 'trim_whitespace'],
             \'python': ['black', 'remove_trailing_lines', 'trim_whitespace'],
             \'java': ['google_java_format'],
+            \'cpp': ['clang-format']
             \}  " fixers
 let g:ale_python_flake8_options = '--max-line-length=99'
 let g:ale_python_black_options = '--line-length=99'
