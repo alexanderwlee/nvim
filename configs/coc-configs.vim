@@ -1,7 +1,7 @@
 " CoC
 
 " install the missing extensions after coc.nvim service started
-let g:coc_global_extensions = ['coc-pyright', 'coc-java', 'coc-clangd', 'coc-json', 'coc-vimtex', 'coc-html', 'coc-css', 'coc-tsserver', 'coc-sh']
+let g:coc_global_extensions = ['coc-pyright', 'coc-java', 'coc-clangd', 'coc-rls', 'coc-json', 'coc-vimtex', 'coc-html', 'coc-css', 'coc-tsserver', 'coc-sh']
 
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
