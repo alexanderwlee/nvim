@@ -48,6 +48,7 @@ let g:vim_markdown_conceal_code_blocks = 0  " disable conceal for code blocks in
 
 " vimtex
 let g:vimtex_view_method = 'skim'  " use skim as pdf viewer
+let g:vimtex_quickfix_autoclose_after_keystrokes = 2  " close quickfix window after 2 motions
 
 " indentLine
 let g:indentLine_enabled = 0  " disable indentLine by default
