@@ -10,7 +10,8 @@ Plug 'tpope/vim-surround'  " delete, change, and add surroundings in pairs
 Plug 'airblade/vim-gitgutter'  " show git diff markers in the sign column
 Plug 'tpope/vim-fugitive'  " git plugin
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }  " fuzzy finder (fzf)
-Plug 'junegunn/fzf.vim'  "fzf plugin
+Plug 'junegunn/fzf.vim'  " fzf plugin
+Plug 'mileszs/ack.vim'  " ack plugin
 Plug 'neoclide/coc.nvim', {'branch': 'release'}  " language server plugin
 Plug 'sheerun/vim-polyglot'  " collection of language packs for Vim
 Plug 'dense-analysis/ale'  " asynchronous linting
