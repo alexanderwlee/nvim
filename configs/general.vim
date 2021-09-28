@@ -7,6 +7,7 @@ set smartcase  " automatically switch search to case-sensitive when search query
 set mouse=a  " enable mouse for scrolling and resizing
 set hidden  " enable new buffer creation without saving previous buffer
 set clipboard+=unnamedplus  " always use the clipboard for all operations
+set completeopt-=preview  " do not show preview window during completion
 set foldmethod=indent  " define folds by the indent of lines
 set foldlevel=100  " use high foldlevel to set all folds to be open by default
 set termguicolors  " use gui colors

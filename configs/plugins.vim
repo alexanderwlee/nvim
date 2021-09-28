@@ -12,7 +12,7 @@ Plug 'tpope/vim-fugitive'  " git plugin
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }  " fuzzy finder (fzf)
 Plug 'junegunn/fzf.vim'  " fzf plugin
 Plug 'mileszs/ack.vim'  " ack plugin
-Plug 'neoclide/coc.nvim', {'branch': 'release'}  " language server plugin
+Plug 'neovim/nvim-lspconfig'  " language serve plugin
 Plug 'sheerun/vim-polyglot'  " collection of language packs for Vim
 Plug 'dense-analysis/ale'  " asynchronous linting
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }  " markdown preview plugin

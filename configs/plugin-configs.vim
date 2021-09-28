@@ -21,9 +21,6 @@ let NERDTreeShowHidden = 1  " Tells the NERDTree whether to display hidden files
 " vim-gitgutter
 set updatetime=100  " reduce delay to 100ms
 
-" CoC
-source ~/.config/nvim/configs/coc-configs.vim
-
 " ALE
 " map for :ALEFix
 nmap <leader>fx <Plug>(ale_fix)
@@ -32,15 +29,12 @@ let g:ale_linters = {
       \'tex': ['chktex'],
       \}  " linters
 let g:ale_fixers = {
-            \'*': ['remove_trailing_lines', 'trim_whitespace'],
-            \'python': ['black', 'remove_trailing_lines', 'trim_whitespace'],
-            \'java': ['google_java_format', 'remove_trailing_lines', 'trim_whitespace'],
-            \'cpp': ['clangtidy', 'clang-format', 'remove_trailing_lines', 'trim_whitespace'],
-            \'rust': ['rustfmt', 'remove_trailing_lines', 'trim_whitespace'],
-            \'go': ['gofmt', 'remove_trailing_lines', 'trim_whitespace']
-            \}  " fixers
+	    \'*': ['remove_trailing_lines', 'trim_whitespace'],
+	    \'python': ['black', 'remove_trailing_lines', 'trim_whitespace'],
+	    \'java': ['google_java_format', 'remove_trailing_lines', 'trim_whitespace'],
+	    \}  " fixers
 let g:ale_fix_on_save = 1  " fix on save
-let g:ale_fix_on_save_ignore = ['black', 'google_java_format', 'clang-format', 'rustfmt', 'gofmt']
+let g:ale_fix_on_save_ignore = ['black', 'google_java_format']
 
 " vim-markdown
 let g:vim_markdown_conceal = 0  " disable concealing syntax for markdown
@@ -53,3 +47,6 @@ let g:vimtex_quickfix_autoclose_after_keystrokes = 2  " close quickfix window af
 " indentLine
 let g:indentLine_enabled = 0  " disable indentLine by default
 let g:indentLine_char = '│'  " use prettier lines
+
+" lspconfig
+source ~/.config/nvim/configs/lsp-configs.vim
