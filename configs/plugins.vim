@@ -1,6 +1,6 @@
 call plug#begin('~/.config/nvim/plugged')
 if !has('nvim')
-  Plug 'noahfrederick/vim-neovim-defaults'  " nvim defaults for vim
+    Plug 'noahfrederick/vim-neovim-defaults'  " nvim defaults for vim
 endif
 Plug 'scrooloose/nerdtree'  " show file tree explorer
 Plug 'Xuyuanp/nerdtree-git-plugin'  " show git status flags with NERDTree
@@ -12,6 +12,7 @@ Plug 'tpope/vim-fugitive'  " git plugin
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }  " fuzzy finder (fzf)
 Plug 'junegunn/fzf.vim'  " fzf plugin
 Plug 'mileszs/ack.vim'  " ack plugin
+Plug 'nathanmsmith/nvim-ale-diagnostic'  " display nvim-lsp diagnostics in ALE
 Plug 'neovim/nvim-lspconfig'  " language serve plugin
 Plug 'sheerun/vim-polyglot'  " collection of language packs for Vim
 Plug 'dense-analysis/ale'  " asynchronous linting
