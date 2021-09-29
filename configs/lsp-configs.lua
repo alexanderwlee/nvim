@@ -43,11 +43,29 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', '<leader>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 end
 
--- Use a loop to conveniently call 'setup' on multiple servers and
--- map buffer local keybindings when the language server attaches
-local servers = { 'pyright', 'jdtls', 'texlab' }
-for _, lsp in ipairs(servers) do
-  nvim_lsp[lsp].setup {
-    on_attach = on_attach
+-- Server settings
+nvim_lsp.pyright.setup {
+  on_attach = on_attach
+}
+
+nvim_lsp.jdtls.setup {
+  on_attach = on_attach
+}
+
+nvim_lsp.texlab.setup {
+  on_attach = on_attach,
+  settings = {
+    texlab = {
+      build = {
+        onSave = true
+      },
+      chktex = {
+        onEdit = true,
+        onOpenAndSave = true
+      },
+      forwardSearch = {
+        executable = "/Applications/Skim.app/Contents/SharedSupport/displayline"
+      }
+    }
   }
-end
+}

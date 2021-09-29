@@ -17,7 +17,6 @@ Plug 'neovim/nvim-lspconfig'  " language serve plugin
 Plug 'sheerun/vim-polyglot'  " collection of language packs for Vim
 Plug 'dense-analysis/ale'  " asynchronous linting
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }  " markdown preview plugin
-Plug 'lervag/vimtex'  " latex plugin
 Plug 'Yggdroot/indentLine'  " display the indention levels with thin vertical lines
 Plug 'majutsushi/tagbar'  " displays tags in a window
 Plug 'mbbill/undotree'  " undo history visualizer

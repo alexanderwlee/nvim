@@ -40,12 +40,6 @@ let g:ale_fix_on_save_ignore = ['black', 'google_java_format']
 let g:vim_markdown_conceal = 0  " disable concealing syntax for markdown
 let g:vim_markdown_conceal_code_blocks = 0  " disable conceal for code blocks in markdown
 
-" vimtex
-if has('macos')
-      let g:vimtex_view_method = 'skim'  " use skim as pdf viewer if on macos
-endif
-let g:vimtex_quickfix_autoclose_after_keystrokes = 2  " close quickfix window after 2 motions
-
 " indentLine
 let g:indentLine_enabled = 0  " disable indentLine by default
 let g:indentLine_char = '│'  " use prettier lines
