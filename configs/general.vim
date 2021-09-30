@@ -12,5 +12,4 @@ set foldmethod=indent  " define folds by the indent of lines
 set foldlevel=100  " use high foldlevel to set all folds to be open by default
 set termguicolors  " use gui colors
 set colorcolumn=80  " set ruler at 80 characters
-let mapleader = ' '  " use <space> for leader key
-autocmd! GUIEnter * set vb t_vb=  " remove bells in MacVim
+let mapleader = ' '  " use space for leader key
