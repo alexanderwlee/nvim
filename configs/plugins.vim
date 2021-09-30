@@ -4,11 +4,8 @@ if !has('nvim')
 endif
 Plug 'scrooloose/nerdtree'  " show file tree explorer
 Plug 'Xuyuanp/nerdtree-git-plugin'  " show git status flags with NERDTree
-Plug 'jiangmiao/auto-pairs'  "  insert or delete brackets, parens, quotes in pair
 Plug 'preservim/nerdcommenter'  " comment text
-Plug 'tpope/vim-surround'  " delete, change, and add surroundings in pairs
 Plug 'airblade/vim-gitgutter'  " show git diff markers in the sign column
-Plug 'tpope/vim-fugitive'  " git plugin
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }  " fuzzy finder (fzf)
 Plug 'junegunn/fzf.vim'  " fzf plugin
 Plug 'mileszs/ack.vim'  " ack plugin
