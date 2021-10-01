@@ -1,5 +1,11 @@
 call plug#begin('~/.config/nvim/plugged')
-if !has('nvim')
+if has('nvim-0.5')
+    Plug 'neovim/nvim-lspconfig'  " collection of configurations for built-in LSP client
+    Plug 'hrsh7th/cmp-nvim-lsp'  " LSP source for nvim-cmp
+    Plug 'hrsh7th/cmp-buffer'  " nvim-cmp source for buffer words
+    Plug 'hrsh7th/nvim-cmp'  " auto-completion plugin
+    Plug 'nathanmsmith/nvim-ale-diagnostic'  " display nvim-lsp diagnostics in ALE
+else
     Plug 'noahfrederick/vim-neovim-defaults'  " nvim defaults for vim
 endif
 Plug 'scrooloose/nerdtree'  " show file tree explorer
@@ -9,11 +15,6 @@ Plug 'airblade/vim-gitgutter'  " show git diff markers in the sign column
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }  " fuzzy finder (fzf)
 Plug 'junegunn/fzf.vim'  " fzf plugin
 Plug 'mileszs/ack.vim'  " ack plugin
-Plug 'nathanmsmith/nvim-ale-diagnostic'  " display nvim-lsp diagnostics in ALE
-Plug 'neovim/nvim-lspconfig'  " collection of configurations for built-in LSP client
-Plug 'hrsh7th/cmp-nvim-lsp'  " LSP source for nvim-cmp
-Plug 'hrsh7th/cmp-buffer'  " nvim-cmp source for buffer words
-Plug 'hrsh7th/nvim-cmp'  " auto-completion plugin
 Plug 'sheerun/vim-polyglot'  " collection of language packs for Vim
 Plug 'dense-analysis/ale'  " asynchronous linting
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }  " markdown preview plugin
@@ -25,4 +26,5 @@ Plug 'christoomey/vim-tmux-navigator'  " navigate between tmux panes and vim spl
 Plug 'vim-scripts/restore_view.vim'  " restore previous view (cursor and folds)
 Plug 'vim-airline/vim-airline'  " status line
 Plug 'bluz71/vim-nightfly-guicolors'  " nightfly colorscheme
+Plug 'itchyny/calendar.vim'  " calendar application for vim
 call plug#end()
