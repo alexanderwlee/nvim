@@ -43,11 +43,6 @@ let g:vim_markdown_conceal_code_blocks = 0  " disable conceal for code blocks in
 let g:indentLine_enabled = 0  " disable indentLine by default
 let g:indentLine_char = '│'  " use prettier lines
 
-" calendar.vim
-source ~/.cache/calendar.vim/credentials.vim
-let g:calendar_google_calendar = 1
-let g:calendar_google_task = 1
-
 " lspconfig
 if has('nvim-0.5')
       luafile ~/.config/nvim/configs/lsp-configs.lua

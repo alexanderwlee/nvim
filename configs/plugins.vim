@@ -26,5 +26,4 @@ Plug 'christoomey/vim-tmux-navigator'  " navigate between tmux panes and vim spl
 Plug 'vim-scripts/restore_view.vim'  " restore previous view (cursor and folds)
 Plug 'vim-airline/vim-airline'  " status line
 Plug 'bluz71/vim-nightfly-guicolors'  " nightfly colorscheme
-Plug 'itchyny/calendar.vim'  " calendar application for vim
 call plug#end()
