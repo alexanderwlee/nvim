@@ -82,7 +82,14 @@ nvim_lsp.pyright.setup {
 
 nvim_lsp.jdtls.setup {
   on_attach = on_attach,
-  capabilities = capabilities
+  capabilities = capabilities,
+  settings = {
+    java = {
+      signatureHelp = {
+        enabled = true
+      }
+    }
+  }
 }
 
 nvim_lsp.texlab.setup {
