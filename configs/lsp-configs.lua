@@ -32,6 +32,16 @@ cmp.setup({
 
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
+-- Setup lsp_signature.
+require "lsp_signature".setup({
+    hi_parameter = "IncSearch",
+    hint_prefix = "",
+    bind = true,
+    handler_opts = {
+      border = "none"
+    }
+})
+
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
 local on_attach = function(client, bufnr)

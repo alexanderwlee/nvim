@@ -4,6 +4,7 @@ if has('nvim-0.5')
     Plug 'hrsh7th/cmp-nvim-lsp'  " LSP source for nvim-cmp
     Plug 'hrsh7th/cmp-buffer'  " nvim-cmp source for buffer words
     Plug 'hrsh7th/nvim-cmp'  " auto-completion plugin
+    Plug 'ray-x/lsp_signature.nvim'  " lsp signature hints
     Plug 'nathanmsmith/nvim-ale-diagnostic'  " display nvim-lsp diagnostics in ALE
 else
     Plug 'noahfrederick/vim-neovim-defaults'  " nvim defaults for vim
