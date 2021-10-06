@@ -100,10 +100,6 @@ nvim_lsp.texlab.setup {
       build = {
         onSave = true
       },
-      chktex = {
-        onEdit = true,
-        onOpenAndSave = true
-      },
       forwardSearch = {
         executable = "/Applications/Skim.app/Contents/SharedSupport/displayline"
       }
