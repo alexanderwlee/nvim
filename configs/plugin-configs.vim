@@ -26,6 +26,7 @@ set updatetime=100  " reduce delay to 100ms
 nmap <leader>fx <Plug>(ale_fix)
 let g:ale_linters = {
       \'python': ['flake8'],
+      \'markdown': ['mdl']
       \}  " linters
 let g:ale_fixers = {
       \'*': ['remove_trailing_lines', 'trim_whitespace'],
