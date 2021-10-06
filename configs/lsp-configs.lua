@@ -34,12 +34,12 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protoco
 
 -- Setup lsp_signature.
 require "lsp_signature".setup({
-    hi_parameter = "IncSearch",
-    hint_prefix = "",
-    bind = true,
-    handler_opts = {
-      border = "none"
-    }
+  hi_parameter = "IncSearch",
+  hint_prefix = "",
+  bind = true,
+  handler_opts = {
+    border = "none"
+  }
 })
 
 -- Use an on_attach function to only map the following keys
