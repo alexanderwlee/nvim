@@ -25,6 +25,8 @@ if has('nvim-0.5')
     Plug 'hrsh7th/cmp-nvim-lsp'  " LSP source for nvim-cmp
     Plug 'hrsh7th/cmp-buffer'  " nvim-cmp source for buffer words
     Plug 'hrsh7th/nvim-cmp'  " auto-completion plugin
+    Plug 'glepnir/lspsaga.nvim'
+    Plug 'lewis6991/gitsigns.nvim'
     Plug 'ray-x/lsp_signature.nvim'  " LSP signature hints
     Plug 'nathanmsmith/nvim-ale-diagnostic'  " display nvim-lsp diagnostics in ALE
     Plug 'nvim-lua/plenary.nvim'  " plugin for telescope.nvim
