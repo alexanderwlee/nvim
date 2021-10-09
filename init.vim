@@ -27,21 +27,21 @@ if has('nvim-0.5')
     Plug 'hrsh7th/nvim-cmp'  " auto-completion plugin
     Plug 'ray-x/lsp_signature.nvim'  " LSP signature hints
     Plug 'nathanmsmith/nvim-ale-diagnostic'  " display nvim-lsp diagnostics in ALE
+    Plug 'nvim-lua/plenary.nvim'  " plugin for telescope.nvim
+    Plug 'nvim-telescope/telescope.nvim'  " extendable fuzzy finder over lists
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " interface for tree-sitter in neovim
+    Plug 'kyazdani42/nvim-web-devicons'  " devicons for nvim
 else
     Plug 'noahfrederick/vim-neovim-defaults'  " nvim defaults for vim
 endif
 Plug 'preservim/nerdcommenter'  " comment text
 Plug 'airblade/vim-gitgutter'  " show git diff markers in the sign column
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }  " fuzzy finder (fzf)
-Plug 'junegunn/fzf.vim'  " fzf plugin
-Plug 'mileszs/ack.vim'  " ack plugin
 Plug 'sheerun/vim-polyglot'  " collection of language packs for Vim
 Plug 'dense-analysis/ale'  " asynchronous linting
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }  " markdown preview plugin
 Plug 'Yggdroot/indentLine'  " display the indention levels with thin vertical lines
 Plug 'majutsushi/tagbar'  " displays tags in a window
 Plug 'mbbill/undotree'  " undo history visualizer
-Plug 'ryanoasis/vim-devicons'  " filetype icons for Vim plugins
 Plug 'christoomey/vim-tmux-navigator'  " navigate between tmux panes and vim splits
 Plug 'vim-scripts/restore_view.vim'  " restore previous view (cursor and folds)
 Plug 'vim-airline/vim-airline'  " status line
