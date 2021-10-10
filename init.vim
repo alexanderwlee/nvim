@@ -35,6 +35,7 @@ else
     Plug 'noahfrederick/vim-neovim-defaults'  " nvim defaults for vim
 endif
 Plug 'preservim/nerdcommenter'  " comment text
+Plug 'tpope/vim-fugitive'  " git plugin
 Plug 'airblade/vim-gitgutter'  " show git diff markers in the sign column
 Plug 'sheerun/vim-polyglot'  " collection of language packs for Vim
 Plug 'dense-analysis/ale'  " asynchronous linting
