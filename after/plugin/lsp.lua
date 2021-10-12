@@ -1,5 +1,4 @@
-local nvim_lsp = require('lspconfig')
-
+-- Setup nvim-ale-diagnostic.
 require("nvim-ale-diagnostic")
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
@@ -42,6 +41,9 @@ require "lsp_signature".setup({
     border = "none"
   }
 })
+
+-- Setup lspconfig.
+local nvim_lsp = require('lspconfig')
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
