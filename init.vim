@@ -13,7 +13,6 @@ set foldmethod=indent  " define folds by the indent of lines
 set foldlevel=100  " use high foldlevel to set all folds to be open by default
 set termguicolors  " use gui colors
 set colorcolumn=80  " set ruler at 80 characters
-set guifont=MesloLGS\ NF:h16  " set Vim font to a Nerd Font
 set noshowmode " remove default status bar
 set updatetime=100  " reduce delay to 100ms
 let mapleader = ' '  " use space for leader key
