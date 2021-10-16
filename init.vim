@@ -45,6 +45,5 @@ Plug 'christoomey/vim-tmux-navigator'  " navigate between tmux panes and vim spl
 Plug 'vim-scripts/restore_view.vim'  " restore previous view (cursor and folds)
 Plug 'vim-airline/vim-airline'  " status line
 Plug 'jiangmiao/auto-pairs'  " insert or delete brackets, parens, quotes in pair
-Plug 'tpope/vim-sleuth'  " heuristically set buffer options
 Plug 'bluz71/vim-nightfly-guicolors'  " nightfly colorscheme
 call plug#end()
