@@ -37,6 +37,7 @@ Plug 'dense-analysis/ale'  " asynchronous linting
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }  " fzf
 Plug 'junegunn/fzf.vim'  " fzf plugin
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }  " markdown preview plugin
+Plug 'lervag/vimtex'  " filetype plugin for LaTeX files
 Plug 'Yggdroot/indentLine'  " display the indention levels with thin vertical lines
 Plug 'majutsushi/tagbar'  " displays tags in a window
 Plug 'mbbill/undotree'  " undo history visualizer

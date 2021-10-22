@@ -96,15 +96,5 @@ nvim_lsp.jdtls.setup {
 
 nvim_lsp.texlab.setup {
   on_attach = on_attach,
-  capabilities = capabilities,
-  settings = {
-    texlab = {
-      build = {
-        onSave = true
-      },
-      forwardSearch = {
-        executable = "/Applications/Skim.app/Contents/SharedSupport/displayline"
-      }
-    }
-  }
+  capabilities = capabilities
 }
