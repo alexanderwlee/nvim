@@ -36,6 +36,7 @@ Plug 'sheerun/vim-polyglot'  " collection of language packs for Vim
 Plug 'dense-analysis/ale'  " asynchronous linting
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }  " fzf
 Plug 'junegunn/fzf.vim'  " fzf plugin
+Plug 'plasticboy/vim-markdown'  " syntax file for markdown
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }  " markdown preview plugin
 Plug 'lervag/vimtex'  " filetype plugin for LaTeX files
 Plug 'Yggdroot/indentLine'  " display the indention levels with thin vertical lines
