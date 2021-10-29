@@ -1,2 +1,2 @@
-set spell
-set textwidth=79
+setlocal spell
+setlocal textwidth=79
