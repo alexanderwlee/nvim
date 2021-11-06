@@ -12,7 +12,7 @@ set completeopt=menu,menuone,noselect  " completion options
 set foldmethod=indent  " define folds by the indent of lines
 set foldlevel=100  " use high foldlevel to set all folds to be open by default
 set termguicolors  " use gui colors
-set colorcolumn=80  " set ruler at 80 characters
+set colorcolumn=80,100  " set ruler at 80 and 100 characters
 set noshowmode " remove default status bar
 set updatetime=100  " reduce delay to 100ms
 let mapleader = ' '  " use space for leader key
