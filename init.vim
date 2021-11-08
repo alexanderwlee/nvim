@@ -21,10 +21,6 @@ let mapleader = ' '  " use space for leader key
 call plug#begin('~/.config/nvim/plugged')
 if has('nvim-0.5')
     Plug 'neovim/nvim-lspconfig'  " collection of configurations for built-in LSP client
-    Plug 'hrsh7th/cmp-nvim-lsp'  " LSP source for nvim-cmp
-    Plug 'hrsh7th/cmp-buffer'  " nvim-cmp source for buffer words
-    Plug 'hrsh7th/nvim-cmp'  " auto-completion plugin
-    Plug 'ray-x/lsp_signature.nvim'  " LSP signature hints
     Plug 'nathanmsmith/nvim-ale-diagnostic'  " display nvim-lsp diagnostics in ALE
 else
     Plug 'noahfrederick/vim-neovim-defaults'  " nvim defaults for vim

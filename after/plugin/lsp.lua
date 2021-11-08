@@ -10,37 +10,6 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   }
 )
 
--- Setup nvim-cmp.
-local cmp = require'cmp'
-
-cmp.setup({
-  mapping = {
-    ['<S-Tab>'] = cmp.mapping.select_prev_item(),
-    ['<Tab>'] = cmp.mapping.select_next_item(),
-    ['<C-d>'] = cmp.mapping.scroll_docs(-4),
-    ['<C-f>'] = cmp.mapping.scroll_docs(4),
-    ['<C-Space>'] = cmp.mapping.complete(),
-    ['<C-e>'] = cmp.mapping.close(),
-    ['<CR>'] = cmp.mapping.confirm({ select = true }),
-  },
-  sources = {
-    { name = 'nvim_lsp' }
-  }
-})
-
-local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
-
--- Setup lsp_signature.
-require "lsp_signature".setup({
-  hi_parameter = "IncSearch",
-  hint_prefix = "",
-  hint_enable = false,
-  bind = true,
-  handler_opts = {
-    border = "none"
-  }
-})
-
 -- Setup lspconfig.
 local nvim_lsp = require('lspconfig')
 
@@ -78,23 +47,13 @@ end
 
 -- Server settings
 nvim_lsp.pyright.setup {
-  on_attach = on_attach,
-  capabilities = capabilities
+  on_attach = on_attach
 }
 
 nvim_lsp.jdtls.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  settings = {
-    java = {
-      signatureHelp = {
-        enabled = true
-      }
-    }
-  }
+  on_attach = on_attach
 }
 
 nvim_lsp.texlab.setup {
-  on_attach = on_attach,
-  capabilities = capabilities
+  on_attach = on_attach
 }
