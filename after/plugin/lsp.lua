@@ -10,6 +10,15 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   }
 )
 
+-- Setup lsp_signature.
+require "lsp_signature".setup({
+  bind = true,
+  doc_lines = 0,
+  floating_window = false,
+  hi_parameter = "IncSearch",
+  hint_prefix = "",
+})
+
 -- Setup lspconfig.
 local nvim_lsp = require('lspconfig')
 
@@ -47,13 +56,20 @@ end
 
 -- Server settings
 nvim_lsp.pyright.setup {
-  on_attach = on_attach
+  on_attach = on_attach,
 }
 
 nvim_lsp.jdtls.setup {
-  on_attach = on_attach
+  on_attach = on_attach,
+  settings = {
+    java = {
+      signatureHelp = {
+        enabled = true
+      }
+    }
+  }
 }
 
 nvim_lsp.texlab.setup {
-  on_attach = on_attach
+  on_attach = on_attach,
 }
