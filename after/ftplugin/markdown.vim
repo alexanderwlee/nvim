@@ -1,3 +1,3 @@
 setlocal spell
-setlocal textwidth=79
+setlocal textwidth=80
 setlocal expandtab  " insert spaces instead of <Tab>s for indents
