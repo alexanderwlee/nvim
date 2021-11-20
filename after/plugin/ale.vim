@@ -14,3 +14,6 @@ let g:ale_fix_on_save_ignore = ['black']
 
 nnoremap <leader>at :ALEToggle<CR>
 nnoremap <leader>af :ALEFix<CR>
+nnoremap <leader>ad :ALEDetail<CR>
+nnoremap ]a :ALENextWrap<CR>
+nnoremap [a :ALEPreviousWrap<CR>
