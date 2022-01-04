@@ -72,4 +72,14 @@ nvim_lsp.jdtls.setup {
 
 nvim_lsp.texlab.setup {
   on_attach = on_attach,
+  settings = {
+    texlab = {
+      build = {
+        onSave = true
+      },
+      forwardSearch = {
+        executable = 'evince'
+      }
+    }
+  }
 }
