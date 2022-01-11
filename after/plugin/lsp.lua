@@ -1,24 +1,3 @@
--- Setup nvim-ale-diagnostic.
-require("nvim-ale-diagnostic")
-
-vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
-  vim.lsp.diagnostic.on_publish_diagnostics, {
-    underline = false,
-    virtual_text = false,
-    signs = true,
-    update_in_insert = false,
-  }
-)
-
--- Setup lsp_signature.
-require "lsp_signature".setup({
-  bind = true,
-  doc_lines = 0,
-  floating_window = false,
-  hi_parameter = "IncSearch",
-  hint_prefix = "",
-})
-
 -- Setup lspconfig.
 local nvim_lsp = require('lspconfig')
 
