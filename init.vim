@@ -22,6 +22,7 @@ call plug#begin('~/.config/nvim/plugged')
 if has('nvim-0.5')
     Plug 'neovim/nvim-lspconfig'  " collection of configurations for built-in LSP client
 endif
+Plug 'preservim/nerdtree'  " tree explorer
 Plug 'preservim/nerdcommenter'  " comment text
 Plug 'tpope/vim-fugitive'  " git plugin
 Plug 'airblade/vim-gitgutter'  " show git diff markers in the sign column
