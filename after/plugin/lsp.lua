@@ -64,9 +64,6 @@ nvim_lsp.texlab.setup {
     texlab = {
       build = {
         onSave = true
-      },
-      forwardSearch = {
-        executable = 'evince'
       }
     }
   }
