@@ -40,7 +40,7 @@ end
 
 -- Server settings
 nvim_lsp.pyright.setup {
-  on_attach = on_attach,
+  on_attach = on_attach
 }
 
 nvim_lsp.jdtls.setup {
@@ -52,6 +52,10 @@ nvim_lsp.jdtls.setup {
       }
     }
   }
+}
+
+nvim_lsp.bashls.setup {
+  on_attach = on_attach
 }
 
 nvim_lsp.texlab.setup {
