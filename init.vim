@@ -21,12 +21,12 @@ let mapleader = ' '  " use space for leader key
 call plug#begin('~/.config/nvim/plugged')
 if has('nvim-0.5')
     Plug 'neovim/nvim-lspconfig'  " collection of configurations for built-in LSP client
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " nvim treesitter configurations and abstraction layer
 endif
 Plug 'preservim/nerdtree'  " tree explorer
 Plug 'preservim/nerdcommenter'  " comment text
 Plug 'tpope/vim-fugitive'  " git plugin
 Plug 'airblade/vim-gitgutter'  " show git diff markers in the sign column
-Plug 'sheerun/vim-polyglot'  " collection of language packs for Vim
 Plug 'dense-analysis/ale'  " asynchronous linting
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }  " fzf
 Plug 'junegunn/fzf.vim'  " fzf plugin
