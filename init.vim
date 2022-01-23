@@ -22,6 +22,9 @@ call plug#begin('~/.config/nvim/plugged')
 if has('nvim-0.5')
     Plug 'neovim/nvim-lspconfig'  " collection of configurations for built-in LSP client
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " nvim treesitter configurations and abstraction layer
+    Plug 'nvim-lua/plenary.nvim' " lua functions (dependency for telescope)
+    Plug 'nvim-telescope/telescope.nvim' " fuzzy finder over lists
+    Plug 'kyazdani42/nvim-web-devicons'
 endif
 Plug 'preservim/nerdtree'  " tree explorer
 Plug 'preservim/nerdcommenter'  " comment text
