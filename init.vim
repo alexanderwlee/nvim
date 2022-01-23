@@ -13,8 +13,6 @@ set foldmethod=indent  " define folds by the indent of lines
 set foldlevel=100  " use high foldlevel to set all folds to be open by default
 set termguicolors  " use gui colors
 set colorcolumn=80,100  " set ruler at 80 and 100 characters
-set noshowmode " remove default status bar
-set updatetime=100  " reduce delay to 100ms
 let mapleader = ' '  " use space for leader key
 
 " Plugins
@@ -26,10 +24,10 @@ if has('nvim-0.5')
     Plug 'nvim-telescope/telescope.nvim' " fuzzy finder over lists
     Plug 'kyazdani42/nvim-web-devicons'  " lua fork of vim-web-devicons for neovim
     Plug 'nvim-lualine/lualine.nvim'  " neovim statusline plugin
+    Plug 'lewis6991/gitsigns.nvim'  " git integration for buffers
 endif
 Plug 'preservim/nerdcommenter'  " comment text
 Plug 'tpope/vim-fugitive'  " git plugin
-Plug 'airblade/vim-gitgutter'  " show git diff markers in the sign column
 Plug 'dense-analysis/ale'  " asynchronous linting
 Plug 'plasticboy/vim-markdown'  " syntax file for markdown
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }  " markdown preview plugin
