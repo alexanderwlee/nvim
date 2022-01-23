@@ -17,15 +17,6 @@ let mapleader = ' '  " use space for leader key
 
 " Plugins
 call plug#begin('~/.config/nvim/plugged')
-if has('nvim-0.5')
-    Plug 'neovim/nvim-lspconfig'  " collection of configurations for built-in LSP client
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " nvim treesitter configurations and abstraction layer
-    Plug 'nvim-lua/plenary.nvim' " lua functions (dependency for telescope)
-    Plug 'nvim-telescope/telescope.nvim' " fuzzy finder over lists
-    Plug 'kyazdani42/nvim-web-devicons'  " lua fork of vim-web-devicons for neovim
-    Plug 'nvim-lualine/lualine.nvim'  " neovim statusline plugin
-    Plug 'lewis6991/gitsigns.nvim'  " git integration for buffers
-endif
 Plug 'preservim/nerdcommenter'  " comment text
 Plug 'tpope/vim-fugitive'  " git plugin
 Plug 'dense-analysis/ale'  " asynchronous linting
@@ -38,4 +29,13 @@ Plug 'christoomey/vim-tmux-navigator'  " navigate between tmux panes and vim spl
 Plug 'vim-scripts/restore_view.vim'  " restore previous view (cursor and folds)
 Plug 'jiangmiao/auto-pairs'  " insert or delete brackets, parens, quotes in pair
 Plug 'bluz71/vim-nightfly-guicolors'  " nightfly colorscheme
+if has('nvim-0.5')
+    Plug 'neovim/nvim-lspconfig'  " collection of configurations for built-in LSP client
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " nvim treesitter configurations and abstraction layer
+    Plug 'nvim-lua/plenary.nvim' " lua functions (dependency for telescope)
+    Plug 'nvim-telescope/telescope.nvim' " fuzzy finder over lists
+    Plug 'kyazdani42/nvim-web-devicons'  " lua fork of vim-web-devicons for neovim
+    Plug 'nvim-lualine/lualine.nvim'  " neovim statusline plugin
+    Plug 'lewis6991/gitsigns.nvim'  " git integration for buffers
+endif
 call plug#end()
