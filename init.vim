@@ -24,7 +24,7 @@ if has('nvim-0.5')
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " nvim treesitter configurations and abstraction layer
     Plug 'nvim-lua/plenary.nvim' " lua functions (dependency for telescope)
     Plug 'nvim-telescope/telescope.nvim' " fuzzy finder over lists
-    Plug 'kyazdani42/nvim-web-devicons'
+    Plug 'kyazdani42/nvim-web-devicons'  " lua fork of vim-web-devicons for neovim
 endif
 Plug 'preservim/nerdtree'  " tree explorer
 Plug 'preservim/nerdcommenter'  " comment text
