@@ -25,14 +25,12 @@ if has('nvim-0.5')
     Plug 'nvim-lua/plenary.nvim' " lua functions (dependency for telescope)
     Plug 'nvim-telescope/telescope.nvim' " fuzzy finder over lists
     Plug 'kyazdani42/nvim-web-devicons'  " lua fork of vim-web-devicons for neovim
+    Plug 'nvim-lualine/lualine.nvim'  " neovim statusline plugin
 endif
-Plug 'preservim/nerdtree'  " tree explorer
 Plug 'preservim/nerdcommenter'  " comment text
 Plug 'tpope/vim-fugitive'  " git plugin
 Plug 'airblade/vim-gitgutter'  " show git diff markers in the sign column
 Plug 'dense-analysis/ale'  " asynchronous linting
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }  " fzf
-Plug 'junegunn/fzf.vim'  " fzf plugin
 Plug 'plasticboy/vim-markdown'  " syntax file for markdown
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }  " markdown preview plugin
 Plug 'Yggdroot/indentLine'  " display the indention levels with thin vertical lines
@@ -40,7 +38,6 @@ Plug 'majutsushi/tagbar'  " displays tags in a window
 Plug 'mbbill/undotree'  " undo history visualizer
 Plug 'christoomey/vim-tmux-navigator'  " navigate between tmux panes and vim splits
 Plug 'vim-scripts/restore_view.vim'  " restore previous view (cursor and folds)
-Plug 'vim-airline/vim-airline'  " status line
 Plug 'jiangmiao/auto-pairs'  " insert or delete brackets, parens, quotes in pair
 Plug 'bluz71/vim-nightfly-guicolors'  " nightfly colorscheme
 call plug#end()
