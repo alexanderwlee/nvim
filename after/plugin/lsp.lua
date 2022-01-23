@@ -1,10 +1,36 @@
--- Setup lspconfig.
-local nvim_lsp = require('lspconfig')
+-- Diagnostic configurations
+local signs = {
+  { name = "DiagnosticSignError", text = '' }, -- xf659
+  { name = "DiagnosticSignWarn", text = '' }, -- xf529
+  { name = "DiagnosticSignInfo", text = '' }, -- xf7fc
+  { name = "DiagnosticSignHint", text = '' }, -- xf835
+}
 
--- Disable virtual text for diagonostics
+for _, sign in ipairs(signs) do
+  vim.fn.sign_define(sign.name, { texthl = sign.name, text = sign.text, numhl = '' })
+end
+
 vim.diagnostic.config({
-  virtual_text = false
+  virtual_text = false,
+  signs = {
+    active = signs,
+  },
+  float = {
+    border = 'rounded'
+  }
 })
+
+-- Handler configurations
+vim.lsp.handlers['textDocument/hover'] = vim.lsp.with(vim.lsp.handlers.hover, {
+	border = 'rounded',
+})
+
+vim.lsp.handlers['textDocument/signatureHelp'] = vim.lsp.with(vim.lsp.handlers.signature_help, {
+	border = 'rounded',
+})
+
+-- Setup lspconfig
+local nvim_lsp = require('lspconfig')
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
@@ -15,7 +41,7 @@ local on_attach = function(client, bufnr)
   -- Enable completion triggered by <c-x><c-o>
   buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
 
-  -- Mappings.
+  -- Mappings
   local opts = { noremap=true, silent=true }
 
   -- See `:help vim.lsp.*` for documentation on any of the below functions
