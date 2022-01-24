@@ -37,5 +37,6 @@ if has('nvim-0.5')
     Plug 'kyazdani42/nvim-web-devicons'  " lua fork of vim-web-devicons for neovim
     Plug 'nvim-lualine/lualine.nvim'  " neovim statusline plugin
     Plug 'lewis6991/gitsigns.nvim'  " git integration for buffers
+    Plug 'kyazdani42/nvim-tree.lua'  " a file explorer tree for neovim
 endif
 call plug#end()
