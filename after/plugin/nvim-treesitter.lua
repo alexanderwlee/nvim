@@ -1,5 +1,5 @@
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = {"python", "java", "bash", "latex"},
+  ensure_installed = {"python", "java", "bash", "latex", "markdown"},
   highlight = {
     enable = true,
 
