@@ -20,7 +20,6 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'preservim/nerdcommenter'  " comment text
 Plug 'tpope/vim-fugitive'  " git plugin
 Plug 'dense-analysis/ale'  " asynchronous linting
-Plug 'plasticboy/vim-markdown'  " syntax file for markdown
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }  " markdown preview plugin
 Plug 'Yggdroot/indentLine'  " display the indention levels with thin vertical lines
 Plug 'majutsushi/tagbar'  " displays tags in a window
