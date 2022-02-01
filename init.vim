@@ -22,10 +22,7 @@ Plug 'tpope/vim-fugitive'  " git plugin
 Plug 'dense-analysis/ale'  " asynchronous linting
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }  " markdown preview plugin
 Plug 'Yggdroot/indentLine'  " display the indention levels with thin vertical lines
-Plug 'majutsushi/tagbar'  " displays tags in a window
-Plug 'mbbill/undotree'  " undo history visualizer
 Plug 'christoomey/vim-tmux-navigator'  " navigate between tmux panes and vim splits
-Plug 'vim-scripts/restore_view.vim'  " restore previous view (cursor and folds)
 Plug 'jiangmiao/auto-pairs'  " insert or delete brackets, parens, quotes in pair
 Plug 'bluz71/vim-nightfly-guicolors'  " nightfly colorscheme
 if has('nvim-0.5')
