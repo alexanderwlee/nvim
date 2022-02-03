@@ -17,6 +17,7 @@ let mapleader = ' '  " use space for leader key
 
 " Plugins
 call plug#begin('~/.config/nvim/plugged')
+Plug 'sheerun/vim-polyglot'  " a solid language pack for vim
 Plug 'preservim/nerdcommenter'  " comment text
 Plug 'tpope/vim-fugitive'  " git plugin
 Plug 'dense-analysis/ale'  " asynchronous linting
