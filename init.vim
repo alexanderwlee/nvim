@@ -25,6 +25,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }  " mark
 Plug 'Yggdroot/indentLine'  " display the indention levels with thin vertical lines
 Plug 'christoomey/vim-tmux-navigator'  " navigate between tmux panes and vim splits
 Plug 'jiangmiao/auto-pairs'  " insert or delete brackets, parens, quotes in pair
+Plug 'preservim/vim-markdown'  " markdown vim mode
 Plug 'bluz71/vim-nightfly-guicolors'  " nightfly colorscheme
 if has('nvim-0.5')
     Plug 'neovim/nvim-lspconfig'  " collection of configurations for built-in LSP client
