@@ -1,5 +1,4 @@
 " Settings
-set clipboard+=unnamedplus " always use the clipboard for all operations
 set colorcolumn=80,100 " set ruler at 80 and 100 characters
 set completeopt=menu,menuone,noselect " completion options
 set expandtab " replace <Tab> with spaces
