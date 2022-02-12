@@ -13,12 +13,11 @@ let g:ale_fixers = {
 let g:ale_python_flake8_options='--max-line-length=100'
 let g:ale_fix_on_save = 1
 let g:ale_fix_on_save_ignore = ['black']
-
 let g:ale_sign_error = ''
 let g:ale_sign_warning = ''
 
-nnoremap <leader>at :ALEToggle<CR>
-nnoremap <leader>af :ALEFix<CR>
-nnoremap <leader>ad :ALEDetail<CR>
-nnoremap ]a :ALENextWrap<CR>
-nnoremap [a :ALEPreviousWrap<CR>
+nnoremap <leader>at <cmd>ALEToggle<cr>
+nnoremap <leader>af <cmd>ALEFix<cr>
+nnoremap <leader>ad <cmd>ALEDetail<cr>
+nnoremap ]a <cmd>ALENextWrap<cr>
+nnoremap [a <cmd>ALEPreviousWrap<cr>
