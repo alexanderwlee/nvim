@@ -40,4 +40,4 @@ endif
 call plug#end()
 
 " Colorscheme
-colorscheme moonfly " use nightfly colorscheme
+colorscheme moonfly
