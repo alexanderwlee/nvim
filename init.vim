@@ -1,5 +1,4 @@
 " Settings
-let mapleader = ' ' " use space for leader key
 set clipboard+=unnamedplus " always use the clipboard for all operations
 set colorcolumn=80,100 " set ruler at 80 and 100 characters
 set completeopt=menu,menuone,noselect " completion options
@@ -12,13 +11,13 @@ set relativenumber " set relative line numbers
 set shiftwidth=4 " number of spaces to use for each step of (auto)indent
 set smartcase " override 'ignorecase' if the search pattern contains upper case characters
 set spell " check words for spelling
-set termguicolors " use gui colors
+set termguicolors " use GUI colors
 set textwidth=80 " maximum width of text that is being inserted
 
 " Plugins
 call plug#begin('~/.config/nvim/plugged')
 Plug 'Yggdroot/indentLine' " display the indention levels with thin vertical lines
-Plug 'bluz71/vim-moonfly-colors' " a dark colorscheme for vim
+Plug 'bluz71/vim-moonfly-colors' " a dark color scheme for vim
 Plug 'christoomey/vim-tmux-navigator' " navigate between tmux panes and vim splits
 Plug 'dense-analysis/ale' " asynchronous linting
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  } " markdown preview plugin
@@ -39,5 +38,5 @@ if has('nvim-0.6')
 endif
 call plug#end()
 
-" Colorscheme
+" Color scheme
 colorscheme moonfly
