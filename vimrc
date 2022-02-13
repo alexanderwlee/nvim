@@ -16,7 +16,7 @@ set textwidth=80 " maximum width of text that is being inserted
 set updatetime=100 " set update time to 100ms
 
 " Plugins
-call plug#begin('~/.config/nvim/plugged')
+call plug#begin()
 Plug 'Yggdroot/indentLine' " display the indention levels with thin vertical lines
 Plug 'airblade/vim-gitgutter' " shows a git diff in the sign column
 Plug 'bluz71/vim-moonfly-colors' " a dark color scheme for vim
