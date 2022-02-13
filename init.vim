@@ -5,6 +5,7 @@ set expandtab " replace <Tab> with spaces
 set hidden " enable new buffer creation without saving previous buffer
 set ignorecase " ignore case when searching
 set mouse=a " enable mouse for scrolling and resizing
+set noshowmode " don't show mode on the last line
 set number " line numbers
 set relativenumber " set relative line numbers
 set shiftwidth=4 " number of spaces to use for each step of (auto)indent
