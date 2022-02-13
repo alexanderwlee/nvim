@@ -9,7 +9,6 @@ set number " line numbers
 set relativenumber " set relative line numbers
 set shiftwidth=4 " number of spaces to use for each step of (auto)indent
 set smartcase " override 'ignorecase' if the search pattern contains upper case characters
-set spell " check words for spelling
 set termguicolors " use GUI colors
 set textwidth=80 " maximum width of text that is being inserted
 
