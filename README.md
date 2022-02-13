@@ -1,1 +1,1 @@
-Alex's neovim configuration.
+Alex's Vim configuration.
