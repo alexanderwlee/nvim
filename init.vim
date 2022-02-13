@@ -25,14 +25,14 @@ Plug 'preservim/vim-markdown' " markdown vim mode
 Plug 'sheerun/vim-polyglot' " a solid language pack for vim
 Plug 'tpope/vim-fugitive' " git plugin
 if has('nvim-0.6')
-    Plug 'kyazdani42/nvim-tree.lua' " a file explorer tree for neovim
-    Plug 'kyazdani42/nvim-web-devicons' " lua fork of vim-web-devicons for neovim
-    Plug 'lewis6991/gitsigns.nvim' " git integration for buffers
-    Plug 'neovim/nvim-lspconfig' " collection of configurations for built-in LSP client
-    Plug 'nvim-lua/plenary.nvim' " lua functions (dependency for telescope)
-    Plug 'nvim-lualine/lualine.nvim' " neovim statusline plugin
-    Plug 'nvim-telescope/telescope.nvim' " fuzzy finder over lists
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " nvim treesitter configurations and abstraction layer
+  Plug 'kyazdani42/nvim-tree.lua' " a file explorer tree for neovim
+  Plug 'kyazdani42/nvim-web-devicons' " lua fork of vim-web-devicons for neovim
+  Plug 'lewis6991/gitsigns.nvim' " git integration for buffers
+  Plug 'neovim/nvim-lspconfig' " collection of configurations for built-in LSP client
+  Plug 'nvim-lua/plenary.nvim' " lua functions (dependency for telescope)
+  Plug 'nvim-lualine/lualine.nvim' " neovim statusline plugin
+  Plug 'nvim-telescope/telescope.nvim' " fuzzy finder over lists
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " nvim treesitter configurations and abstraction layer
 endif
 call plug#end()
 
