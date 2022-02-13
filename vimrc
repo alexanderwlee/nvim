@@ -1,6 +1,5 @@
 " Settings
 set colorcolumn=80,100 " set ruler at 80 and 100 characters
-set completeopt=menu,menuone,noselect " completion options
 set directory=$HOME/.vim/swap// " directory for swap files
 set expandtab " replace <Tab> with spaces
 set hidden " enable new buffer creation without saving previous buffer

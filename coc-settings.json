@@ -1,3 +1,4 @@
 {
+  "suggest.autoTrigger": "none",
   "texlab.build.onSave": true
 }
