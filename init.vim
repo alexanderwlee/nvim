@@ -42,6 +42,7 @@ if has('nvim-0.6')
     Plug 'kyazdani42/nvim-web-devicons'  " lua fork of vim-web-devicons for neovim
     Plug 'neovim/nvim-lspconfig'  " collection of configurations for built-in LSP client
     Plug 'nvim-lua/plenary.nvim' " lua functions
+    Plug 'nvim-orgmode/orgmode' " orgmode clone for neovim
     Plug 'nvim-telescope/telescope.nvim' " fuzzy finder over lists
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " nvim treesitter configurations and abstraction layer
 endif

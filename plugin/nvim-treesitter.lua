@@ -1,5 +1,8 @@
+-- Load custom tree-sitter grammar for org filetype
+require('orgmode').setup_ts_grammar()
+
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = {"python", "java", "bash", "latex", "markdown"},
+  ensure_installed = {"python", "java", "bash", "latex", "markdown", "org"},
   highlight = {
     enable = true,
 
