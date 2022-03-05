@@ -29,6 +29,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  } " markd
 Plug 'jiangmiao/auto-pairs' " insert or delete brackets, parens, quotes in pair
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fzf
 Plug 'junegunn/fzf.vim' " fzf for vim
+Plug 'lervag/vimtex' " filetype plugin for LaTeX files
 Plug 'preservim/nerdcommenter' " comment text
 Plug 'preservim/nerdtree' " a tree explorer plugin for vim
 Plug 'preservim/vim-markdown' " markdown vim mode
