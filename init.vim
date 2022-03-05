@@ -20,6 +20,7 @@ let mapleader="\<Space>" " use <Space> as leader key
 
 " Plugins
 call plug#begin()
+Plug 'SirVer/ultisnips' " the ultimate snippets solution for vim
 Plug 'Yggdroot/indentLine' " display the indention levels with thin vertical lines
 Plug 'airblade/vim-gitgutter' " shows a git diff in the sign column
 Plug 'bluz71/vim-moonfly-colors' " a dark color scheme for vim
