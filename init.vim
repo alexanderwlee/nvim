@@ -1,6 +1,5 @@
 " Settings
 set clipboard+=unnamedplus " always use the clipboard for all operations
-set colorcolumn=80,100 " set ruler at 80 and 100 characters
 set completeopt=menu,menuone,noselect " completion options
 set expandtab " replace <Tab> with spaces
 set hidden " enable new buffer creation without saving previous buffer
@@ -9,11 +8,9 @@ set mouse=a " enable mouse for scrolling and resizing
 set noshowmode " don't show mode on the last line
 set number " line numbers
 set relativenumber " set relative line numbers
-set shiftwidth=4 " number of spaces to use for each step of (auto)indent
 set signcolumn=yes " always draw the signcolumn
 set smartcase " override 'ignorecase' if the search pattern contains upper case characters
 set termguicolors " use GUI colors
-set textwidth=80 " maximum width of text that is being inserted
 set updatetime=100 " set update time to 100ms
 
 " Leader
