@@ -25,7 +25,6 @@ Plug 'SirVer/ultisnips' " the ultimate snippets solution for vim
 Plug 'Yggdroot/indentLine' " display the indention levels with thin vertical lines
 Plug 'airblade/vim-gitgutter' " shows a git diff in the sign column
 Plug 'bluz71/vim-moonfly-colors' " a dark color scheme for vim
-Plug 'christoomey/vim-tmux-navigator' " navigate between tmux panes and vim splits
 Plug 'dense-analysis/ale' " asynchronous linting
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  } " markdown preview plugin
 Plug 'jiangmiao/auto-pairs' " insert or delete brackets, parens, quotes in pair
