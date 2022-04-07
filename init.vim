@@ -23,7 +23,7 @@ Plug 'Yggdroot/indentLine' " display the indention levels with thin vertical lin
 Plug 'airblade/vim-gitgutter' " shows a git diff in the sign column
 Plug 'bluz71/vim-moonfly-colors' " a dark color scheme for vim
 Plug 'dense-analysis/ale' " asynchronous linting
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  } " markdown preview plugin
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' } " markdown preview plugin
 Plug 'jiangmiao/auto-pairs' " insert or delete brackets, parens, quotes in pair
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fzf
 Plug 'junegunn/fzf.vim' " fzf for vim
