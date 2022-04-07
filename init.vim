@@ -37,11 +37,11 @@ Plug 'tpope/vim-fugitive' " git plugin
 Plug 'tpope/vim-sensible' " sensible defaults for vim
 Plug 'vim-airline/vim-airline' " statusline for vim
 if has('nvim-0.6')
-    Plug 'kyazdani42/nvim-web-devicons'  " lua fork of vim-web-devicons for neovim
-    Plug 'neovim/nvim-lspconfig'  " collection of configurations for built-in LSP client
+    Plug 'kyazdani42/nvim-web-devicons' " lua fork of vim-web-devicons for neovim
+    Plug 'neovim/nvim-lspconfig' " collection of configurations for built-in LSP client
     Plug 'nvim-lua/plenary.nvim' " lua functions
     Plug 'nvim-telescope/telescope.nvim' " fuzzy finder over lists
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " nvim treesitter configurations and abstraction layer
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " nvim treesitter configurations and abstraction layer
 endif
 call plug#end()
 
