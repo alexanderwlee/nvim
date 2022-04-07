@@ -22,7 +22,6 @@ Plug 'SirVer/ultisnips' " the ultimate snippets solution for vim
 Plug 'Yggdroot/indentLine' " display the indention levels with thin vertical lines
 Plug 'airblade/vim-gitgutter' " shows a git diff in the sign column
 Plug 'bluz71/vim-moonfly-colors' " a dark color scheme for vim
-Plug 'dense-analysis/ale' " asynchronous linting
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' } " markdown preview plugin
 Plug 'jiangmiao/auto-pairs' " insert or delete brackets, parens, quotes in pair
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fzf
@@ -37,6 +36,7 @@ Plug 'tpope/vim-fugitive' " git plugin
 Plug 'tpope/vim-sensible' " sensible defaults for vim
 Plug 'vim-airline/vim-airline' " statusline for vim
 if has('nvim-0.6')
+    Plug 'jose-elias-alvarez/null-ls.nvim' " inject lsp diagnostics and code actions
     Plug 'kyazdani42/nvim-web-devicons' " lua fork of vim-web-devicons for neovim
     Plug 'neovim/nvim-lspconfig' " collection of configurations for built-in LSP client
     Plug 'nvim-lua/plenary.nvim' " lua functions
