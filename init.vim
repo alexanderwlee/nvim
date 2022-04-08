@@ -10,6 +10,7 @@ set number " line numbers
 set relativenumber " set relative line numbers
 set signcolumn=yes " always draw the signcolumn
 set smartcase " override 'ignorecase' if the search pattern contains upper case characters
+set spell " enable spell checking
 set termguicolors " use GUI colors
 
 " Leader
