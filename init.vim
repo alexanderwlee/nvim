@@ -11,7 +11,6 @@ set relativenumber " set relative line numbers
 set signcolumn=yes " always draw the signcolumn
 set smartcase " override 'ignorecase' if the search pattern contains upper case characters
 set termguicolors " use GUI colors
-set updatetime=100 " set update time to 100ms
 
 " Leader
 let mapleader="\<Space>" " use <Space> as leader key
