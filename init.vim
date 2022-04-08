@@ -20,26 +20,23 @@ let mapleader="\<Space>" " use <Space> as leader key
 call plug#begin()
 Plug 'SirVer/ultisnips' " the ultimate snippets solution for vim
 Plug 'Yggdroot/indentLine' " display the indention levels with thin vertical lines
-Plug 'airblade/vim-gitgutter' " shows a git diff in the sign column
 Plug 'bluz71/vim-moonfly-colors' " a dark color scheme for vim
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' } " markdown preview plugin
 Plug 'jiangmiao/auto-pairs' " insert or delete brackets, parens, quotes in pair
+Plug 'jose-elias-alvarez/null-ls.nvim' " inject lsp diagnostics and code actions
+Plug 'kyazdani42/nvim-tree.lua' " a file explorer tree for neovim
+Plug 'kyazdani42/nvim-web-devicons' " lua fork of vim-web-devicons for neovim
 Plug 'lervag/vimtex' " filetype plugin for LaTeX files
+Plug 'lewis6991/gitsigns.nvim' " git integration for buffers
+Plug 'neovim/nvim-lspconfig' " collection of configurations for built-in LSP client
+Plug 'nvim-lua/plenary.nvim' " lua functions
+Plug 'nvim-lualine/lualine.nvim' " neovim statusline
+Plug 'nvim-telescope/telescope.nvim' " fuzzy finder over lists
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " nvim treesitter configurations and abstraction layer
 Plug 'preservim/nerdcommenter' " comment text
-Plug 'preservim/nerdtree' " a tree explorer plugin for vim
 Plug 'preservim/vim-markdown' " markdown vim mode
-Plug 'ryanoasis/vim-devicons' " adds filetype icons to vim plugins
 Plug 'sheerun/vim-polyglot' " a solid language pack for vim
 Plug 'tpope/vim-fugitive' " git plugin
-Plug 'vim-airline/vim-airline' " statusline for vim
-if has('nvim-0.6')
-    Plug 'jose-elias-alvarez/null-ls.nvim' " inject lsp diagnostics and code actions
-    Plug 'kyazdani42/nvim-web-devicons' " lua fork of vim-web-devicons for neovim
-    Plug 'neovim/nvim-lspconfig' " collection of configurations for built-in LSP client
-    Plug 'nvim-lua/plenary.nvim' " lua functions
-    Plug 'nvim-telescope/telescope.nvim' " fuzzy finder over lists
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " nvim treesitter configurations and abstraction layer
-endif
 call plug#end()
 
 " Color scheme
