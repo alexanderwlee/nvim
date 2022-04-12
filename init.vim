@@ -1,6 +1,6 @@
 " Settings
 set clipboard+=unnamedplus " always use the clipboard for all operations
-set completeopt=menu,menuone " completion options
+set completeopt=menu,menuone,noselect " completion options
 set expandtab " replace <Tab> with spaces
 set hidden " enable new buffer creation without saving previous buffer
 set ignorecase " ignore case when searching
