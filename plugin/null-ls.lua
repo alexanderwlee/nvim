@@ -32,17 +32,8 @@ local sources = {
 -- Format on save
 local lsp_formatting = function(bufnr)
   vim.lsp.buf.format({
-    filter = function(clients)
-      -- filter out clients that you don't want to use
-      return vim.tbl_filter(function(client)
-        local filtered_clients = { "jdtls", "texlab" }
-        for _, filtered_client in ipairs(filtered_clients) do
-          if client.name == filtered_client then
-            return false
-          end
-        end
-        return true
-      end, clients)
+    filter = function(client)
+      return client.name == "null-ls"
     end,
     bufnr = bufnr,
   })
