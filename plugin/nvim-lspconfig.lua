@@ -68,3 +68,10 @@ lsp.texlab.setup({
     },
   },
 })
+
+local pid = vim.fn.getpid()
+local omnisharp_bin = "/Users/alexanderlee/opt/omnisharp-osx-arm64-net6.0/OmniSharp"
+lsp.omnisharp.setup({
+  cmd = { omnisharp_bin, "--languageserver", "--hostPID", tostring(pid) },
+  on_attach = on_attach,
+})
