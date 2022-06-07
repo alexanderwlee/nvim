@@ -75,3 +75,7 @@ lsp.omnisharp.setup({
   cmd = { omnisharp_bin, "--languageserver", "--hostPID", tostring(pid) },
   on_attach = on_attach,
 })
+
+lsp.clangd.setup({
+  on_attach = on_attach,
+})

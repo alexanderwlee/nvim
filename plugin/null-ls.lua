@@ -11,6 +11,7 @@ local sources = {
     extra_args = { "-I" },
   }),
   diagnostics.flake8,
+  diagnostics.cppcheck,
   diagnostics.mdl,
   diagnostics.selene,
   diagnostics.shellcheck,
@@ -18,6 +19,7 @@ local sources = {
   -- Formatting
   formatting.black,
   formatting.google_java_format,
+  formatting.clang_format,
   formatting.shfmt.with({
     -- Indent with 4 spaces
     extra_args = { "-i", "4" },
