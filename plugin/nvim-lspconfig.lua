@@ -76,6 +76,10 @@ lsp.omnisharp.setup({
   on_attach = on_attach,
 })
 
+-- Specifiy offsetEncoding: https://github.com/neovim/neovim/pull/16694
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.offsetEncoding = { "utf-16" }
 lsp.clangd.setup({
   on_attach = on_attach,
+  capabilities = capabilities,
 })
