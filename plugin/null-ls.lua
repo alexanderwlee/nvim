@@ -20,7 +20,7 @@ local sources = {
   formatting.black,
   formatting.google_java_format,
   formatting.clang_format.with({
-    filetypes = { "c", "cpp" }
+    filetypes = { "c", "cpp" },
   }),
   formatting.shfmt.with({
     -- Indent with 4 spaces
@@ -34,9 +34,11 @@ local sources = {
 }
 
 -- Format on save
+-- https://github.com/jose-elias-alvarez/null-ls.nvim/wiki/Avoiding-LSP-formatting-conflicts
 local lsp_formatting = function(bufnr)
   vim.lsp.buf.format({
     filter = function(client)
+      -- Only use null-ls for formatting
       return client.name == "null-ls"
     end,
     bufnr = bufnr,
