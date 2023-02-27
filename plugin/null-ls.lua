@@ -11,6 +11,9 @@ local sources = {
     extra_args = { "-I" },
   }),
   diagnostics.flake8,
+  diagnostics.checkstyle.with({
+    extra_args = { "-c", "/google_checks.xml" },
+  }),
   diagnostics.cppcheck,
   diagnostics.mdl,
   diagnostics.selene,
