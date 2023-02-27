@@ -68,10 +68,9 @@ lsp.texlab.setup({
   },
 })
 
-local pid = vim.fn.getpid()
-local omnisharp_bin = "/Users/alexanderlee/opt/omnisharp-osx-arm64-net6.0/OmniSharp"
+local omnisharp_dll = "/Users/alexanderlee/bin/omnisharp-osx-arm64-net6.0/OmniSharp.dll"
 lsp.omnisharp.setup({
-  cmd = { omnisharp_bin, "--languageserver", "--hostPID", tostring(pid) },
+  cmd = { "dotnet", omnisharp_dll },
   on_attach = on_attach,
 })
 
