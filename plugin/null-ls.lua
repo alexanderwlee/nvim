@@ -20,6 +20,7 @@ local sources = {
   diagnostics.shellcheck,
 
   -- Formatting
+  formatting.gofmt,
   formatting.black,
   formatting.google_java_format,
   formatting.clang_format.with({

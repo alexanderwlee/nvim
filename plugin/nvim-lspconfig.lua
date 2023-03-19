@@ -38,6 +38,10 @@ end
 -- Servers.
 local lsp = require("lspconfig")
 
+lsp.gopls.setup({
+  on_attach = on_attach,
+})
+
 lsp.pyright.setup({
   on_attach = on_attach,
 })
