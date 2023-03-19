@@ -72,12 +72,6 @@ lsp.texlab.setup({
   },
 })
 
-local omnisharp_dll = "/Users/alexanderlee/bin/omnisharp-osx-arm64-net6.0/OmniSharp.dll"
-lsp.omnisharp.setup({
-  cmd = { "dotnet", omnisharp_dll },
-  on_attach = on_attach,
-})
-
 -- Specifiy offsetEncoding: https://github.com/neovim/neovim/pull/16694
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.offsetEncoding = { "utf-16" }
