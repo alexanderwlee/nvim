@@ -68,6 +68,9 @@ lsp.texlab.setup({
       build = {
         onSave = true,
       },
+      chktex = {
+        onOpenAndSave = true,
+      },
     },
   },
 })

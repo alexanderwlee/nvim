@@ -6,10 +6,6 @@ local formatting = builtins.formatting
 
 local sources = {
   -- Diagnostics
-  diagnostics.chktex.with({
-    -- Execute \input statements
-    extra_args = { "-I" },
-  }),
   diagnostics.flake8,
   diagnostics.checkstyle.with({
     extra_args = { "-c", "/google_checks.xml" },
