@@ -3,6 +3,8 @@ local lspconfig = require("lspconfig")
 
 lspconfig.gopls.setup({})
 
+lspconfig.clangd.setup({})
+
 lspconfig.pyright.setup({})
 
 lspconfig.bashls.setup({})
@@ -18,13 +20,6 @@ lspconfig.texlab.setup({
       },
     },
   },
-})
-
--- Specifiy offsetEncoding: https://github.com/neovim/neovim/pull/16694
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities.offsetEncoding = { "utf-16" }
-lspconfig.clangd.setup({
-  capabilities = capabilities,
 })
 
 -- Global mappings.

@@ -65,11 +65,8 @@ require("lazy").setup({
     event = "InsertEnter",
   },
 
-  -- inject lsp diagnostics and code actions
-  {
-    "jose-elias-alvarez/null-ls.nvim",
-    dependencies = { "nvim-lua/plenary.nvim" },
-  },
+  -- linter
+  "mfussenegger/nvim-lint",
 
   -- formatter
   "stevearc/conform.nvim",
