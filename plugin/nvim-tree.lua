@@ -1,3 +1,5 @@
 require("nvim-tree").setup()
 
-vim.keymap.set("n", "<leader>nt", ":NvimTreeOpen<CR>", { noremap = true, silent = true })
+local api = require("nvim-tree.api")
+
+vim.keymap.set("n", "<leader>nt", api.tree.toggle, { noremap = true, silent = true })
