@@ -18,32 +18,94 @@ vim.opt.termguicolors = true -- use GUI colors
 vim.g.mapleader = " " -- use space as leader key
 
 -- Plugins
-require("packer").startup(function(use)
-  use("wbthomason/packer.nvim") -- package manager
-  use("lukas-reineke/indent-blankline.nvim") -- indent guides for neovim
-  use({ "bluz71/vim-moonfly-colors", as = "moonfly" }) -- a dark color scheme for vim
-  use({
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not (vim.uv or vim.loop).fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
+  })
+end
+vim.opt.rtp:prepend(lazypath)
+
+require("lazy").setup({
+  -- indent guides
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    config = function()
+      require("ibl").setup()
+    end,
+  },
+
+  -- color scheme
+  {
+    "bluz71/vim-moonfly-colors",
+    name = "moonfly",
+    priority = 1000,
+    config = function()
+      vim.cmd([[colorscheme moonfly]])
+    end,
+  },
+
+  -- markdown preview
+  {
     "iamcco/markdown-preview.nvim",
-    run = function()
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    ft = { "markdown" },
+    build = function()
       vim.fn["mkdp#util#install"]()
     end,
-  }) -- markdown preview plugin
-  use("jiangmiao/auto-pairs") -- insert or delete brackets, parens, quotes in pair
-  use({ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" }) -- inject lsp diagnostics and code actions
-  use({ "nvim-tree/nvim-tree.lua", requires = "nvim-tree/nvim-web-devicons" }) -- a file explorer tree for neovim
-  use("lewis6991/gitsigns.nvim") -- git integration for buffers
-  use("neovim/nvim-lspconfig") -- collection of configurations for built-in LSP client
-  use({ "nvim-lualine/lualine.nvim", requires = "kyazdani42/nvim-web-devicons" }) -- neovim statusline
-  use({ "nvim-telescope/telescope.nvim", requires = "nvim-lua/plenary.nvim" }) -- fuzzy finder over lists
-  use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }) -- nvim treesitter configurations and abstraction layer
-  use({
-    "numToStr/Comment.nvim",
-    config = function()
-      require("Comment").setup()
-    end,
-  }) -- comment text
-  use("tpope/vim-fugitive") -- git plugin
-end)
+  },
 
--- Color scheme
-vim.cmd([[colorscheme moonfly]])
+  -- insert or delete brackets, parens, quotes in pair
+  "jiangmiao/auto-pairs",
+
+  -- inject lsp diagnostics and code actions
+  {
+    "jose-elias-alvarez/null-ls.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+  },
+
+  -- file explorer tree
+  {
+    "nvim-tree/nvim-tree.lua",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    config = function()
+      require("nvim-tree").setup()
+    end,
+  },
+
+  -- git integration for buffers
+  "lewis6991/gitsigns.nvim",
+
+  -- collection of configurations for built-in LSP client
+  "neovim/nvim-lspconfig",
+
+  -- status line
+  {
+    "nvim-lualine/lualine.nvim",
+    dependencies = { "kyazdani42/nvim-web-devicons" },
+  },
+
+  -- fuzzy finder over lists
+  {
+    "nvim-telescope/telescope.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+  },
+
+  -- nvim treesitter configurations and abstraction layer
+  {
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
+  },
+
+  -- comment text
+  "numToStr/Comment.nvim",
+
+  -- git plugin
+  "tpope/vim-fugitive",
+})
