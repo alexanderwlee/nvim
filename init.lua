@@ -103,7 +103,10 @@ require("lazy").setup({
   },
 
   -- comment text
-  "numToStr/Comment.nvim",
+  {
+    "numToStr/Comment.nvim",
+    config = true,
+  },
 
   -- git plugin
   "tpope/vim-fugitive",
