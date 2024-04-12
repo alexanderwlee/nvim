@@ -88,7 +88,7 @@ require("lazy").setup({
   -- status line
   {
     "nvim-lualine/lualine.nvim",
-    dependencies = { "kyazdani42/nvim-web-devicons" },
+    dependencies = { "nvim-tree/nvim-web-devicons" },
   },
 
   -- fuzzy finder over lists
