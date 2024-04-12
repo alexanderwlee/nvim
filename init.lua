@@ -1,6 +1,6 @@
 -- Settings
 vim.opt.clipboard = "unnamedplus" -- always use the clipboard for all operations
-vim.opt.completeopt = { "menu", "menuone", "noselect" } -- completion options
+vim.opt.completeopt = { "menu", "menuone" } -- completion options
 vim.opt.expandtab = true -- replace tab with spaces
 vim.opt.foldenable = false -- disable folding at startup (use 'zi' to enable)
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()" -- use treesitter fold expression
