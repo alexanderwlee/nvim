@@ -38,7 +38,6 @@ require("packer").startup(function(use)
   use({ "nvim-telescope/telescope.nvim", requires = "nvim-lua/plenary.nvim" }) -- fuzzy finder over lists
   use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }) -- nvim treesitter configurations and abstraction layer
   use("preservim/nerdcommenter") -- comment text
-  use("preservim/vim-markdown") -- markdown vim mode
   use("tpope/vim-fugitive") -- git plugin
 end)
 
