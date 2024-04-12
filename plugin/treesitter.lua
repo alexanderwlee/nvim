@@ -6,7 +6,6 @@ require("nvim-treesitter.configs").setup({
     "vimdoc",
     "query",
     "python",
-    "java",
     "cpp",
     "bash",
     "markdown",

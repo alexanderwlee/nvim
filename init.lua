@@ -71,6 +71,9 @@ require("lazy").setup({
     dependencies = { "nvim-lua/plenary.nvim" },
   },
 
+  -- formatter
+  "stevearc/conform.nvim",
+
   -- file explorer tree
   {
     "nvim-tree/nvim-tree.lua",

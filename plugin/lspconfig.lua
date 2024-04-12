@@ -5,16 +5,6 @@ lspconfig.gopls.setup({})
 
 lspconfig.pyright.setup({})
 
-lspconfig.jdtls.setup({
-  settings = {
-    java = {
-      signatureHelp = {
-        enabled = true,
-      },
-    },
-  },
-})
-
 lspconfig.bashls.setup({})
 
 lspconfig.texlab.setup({
