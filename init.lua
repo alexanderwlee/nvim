@@ -20,7 +20,6 @@ vim.g.mapleader = " " -- use space as leader key
 -- Plugins
 require("packer").startup(function(use)
   use("wbthomason/packer.nvim") -- package manager
-  use("SirVer/ultisnips") -- the ultimate snippets solution for vim
   use("lukas-reineke/indent-blankline.nvim") -- indent guides for neovim
   use({ "bluz71/vim-moonfly-colors", as = "moonfly" }) -- a dark color scheme for vim
   use({
