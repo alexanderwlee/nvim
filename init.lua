@@ -36,7 +36,12 @@ require("packer").startup(function(use)
   use({ "nvim-lualine/lualine.nvim", requires = "kyazdani42/nvim-web-devicons" }) -- neovim statusline
   use({ "nvim-telescope/telescope.nvim", requires = "nvim-lua/plenary.nvim" }) -- fuzzy finder over lists
   use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }) -- nvim treesitter configurations and abstraction layer
-  use("preservim/nerdcommenter") -- comment text
+  use({
+    "numToStr/Comment.nvim",
+    config = function()
+      require("Comment").setup()
+    end,
+  }) -- comment text
   use("tpope/vim-fugitive") -- git plugin
 end)
 
