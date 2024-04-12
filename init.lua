@@ -31,7 +31,6 @@ require("packer").startup(function(use)
   use("jiangmiao/auto-pairs") -- insert or delete brackets, parens, quotes in pair
   use({ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" }) -- inject lsp diagnostics and code actions
   use({ "nvim-tree/nvim-tree.lua", requires = "nvim-tree/nvim-web-devicons" }) -- a file explorer tree for neovim
-  use("lervag/vimtex") -- filetype plugin for LaTeX files
   use("lewis6991/gitsigns.nvim") -- git integration for buffers
   use("neovim/nvim-lspconfig") -- collection of configurations for built-in LSP client
   use({ "nvim-lualine/lualine.nvim", requires = "kyazdani42/nvim-web-devicons" }) -- neovim statusline
