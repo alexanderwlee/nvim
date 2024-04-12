@@ -2,11 +2,14 @@
 vim.opt.clipboard = "unnamedplus" -- always use the clipboard for all operations
 vim.opt.completeopt = { "menu", "menuone", "noselect" } -- completion options
 vim.opt.expandtab = true -- replace tab with spaces
+vim.opt.foldenable = false -- disable folding at startup (use 'zi' to enable)
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()" -- use treesitter fold expression
+vim.opt.foldmethod = "expr" -- use expression as foldmethod
 vim.opt.hidden = true -- enable new buffer creation without saving previous buffer
 vim.opt.ignorecase = true -- ignore case when searching
-vim.opt.showmode = false -- don't show mode on the last line
 vim.opt.number = true -- line numbers
 vim.opt.relativenumber = true -- set relative line numbers
+vim.opt.showmode = false -- don't show mode on the last line
 vim.opt.signcolumn = "yes" -- always draw the signcolumn
 vim.opt.smartcase = true -- override 'ignorecase' if the search pattern contains upper case characters
 vim.opt.termguicolors = true -- use GUI colors
