@@ -36,9 +36,7 @@ require("lazy").setup({
   {
     "lukas-reineke/indent-blankline.nvim",
     main = "ibl",
-    config = function()
-      require("ibl").setup()
-    end,
+    config = true,
   },
 
   -- color scheme
@@ -61,8 +59,11 @@ require("lazy").setup({
     end,
   },
 
-  -- insert or delete brackets, parens, quotes in pair
-  "jiangmiao/auto-pairs",
+  -- autopairs
+  {
+    "windwp/nvim-autopairs",
+    event = "InsertEnter",
+  },
 
   -- inject lsp diagnostics and code actions
   {
@@ -74,9 +75,7 @@ require("lazy").setup({
   {
     "nvim-tree/nvim-tree.lua",
     dependencies = { "nvim-tree/nvim-web-devicons" },
-    config = function()
-      require("nvim-tree").setup()
-    end,
+    config = true,
   },
 
   -- git integration for buffers
