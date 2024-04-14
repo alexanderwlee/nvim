@@ -5,6 +5,8 @@ lspconfig.gopls.setup({})
 
 lspconfig.clangd.setup({})
 
+lspconfig.cmake.setup({})
+
 lspconfig.pyright.setup({})
 
 lspconfig.bashls.setup({})
