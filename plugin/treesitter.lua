@@ -7,6 +7,7 @@ require("nvim-treesitter.configs").setup({
     "query",
     "python",
     "cpp",
+    "go",
     "bash",
     "markdown",
     "yaml",
