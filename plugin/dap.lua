@@ -30,3 +30,5 @@ local lldb = {
 dap.configurations.cpp = {
   lldb,
 }
+
+require("nvim-dap-virtual-text").setup()

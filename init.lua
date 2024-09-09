@@ -87,6 +87,9 @@ require("lazy").setup({
   -- Debug Adapter Protocol client implementation for Neovim
   "mfussenegger/nvim-dap",
 
+  -- virtual text support for nvim-dap
+  "theHamsta/nvim-dap-virtual-text",
+
   -- status line
   {
     "nvim-lualine/lualine.nvim",
