@@ -84,6 +84,9 @@ require("lazy").setup({
   -- collection of configurations for built-in LSP client
   "neovim/nvim-lspconfig",
 
+  -- Debug Adapter Protocol client implementation for Neovim
+  "mfussenegger/nvim-dap",
+
   -- status line
   {
     "nvim-lualine/lualine.nvim",
