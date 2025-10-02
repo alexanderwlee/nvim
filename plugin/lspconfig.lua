@@ -1,17 +1,5 @@
 -- Setup language servers.
-local lspconfig = require("lspconfig")
-
-lspconfig.gopls.setup({})
-
-lspconfig.clangd.setup({})
-
-lspconfig.cmake.setup({})
-
-lspconfig.pyright.setup({})
-
-lspconfig.bashls.setup({})
-
-lspconfig.texlab.setup({
+vim.lsp.config("texlab", {
   settings = {
     texlab = {
       build = {
@@ -23,6 +11,13 @@ lspconfig.texlab.setup({
     },
   },
 })
+
+vim.lsp.enable("gopls")
+vim.lsp.enable("clangd")
+vim.lsp.enable("cmake")
+vim.lsp.enable("pyright")
+vim.lsp.enable("bashls")
+vim.lsp.enable("texlab")
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
